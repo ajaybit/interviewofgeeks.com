@@ -85,7 +85,8 @@
     <div class="container  ">
       <div class="row" style="margin-top: 25px;">
         <div class="col-md-8 bg-white shadow-sm">
-          <h4 class="hm-welcome">Data Structure Interview Questions</h4>
+          <span><h4 class="hm-welcome">Data Structure Interview Questions</h4></span><span> 58 Questions</span>
+          
           <hr class="divider">
           <br>
 
@@ -408,8 +409,9 @@
                 <h5 class="question">27. Write the C program to insert a node in circular singly list at the beginning.
                 </h5>
                 <code>
-                  #include<stdio.h> <br>
-                    #include<stdlib.h>  <br>
+                  #include
+                   <br>
+                    #include&#60;stdlib.h&#62;  <br>
                     void beg_insert(int); <br> 
                     struct node  <br>
                     {  <br>
@@ -496,15 +498,407 @@
                     to store the elements of that queue because the elements can only be inserted at front end and the
                     value of front might be so high so that, all the space before that, can never be filled.Queues are
                     widely used as waiting lists for a single shared resource like a printer, disk, CPU.</li>
-                  <li class="read-para"><span>Array Size:</span> There might be situations in which, we may need to extend the queue to insert more
+                  <li class="read-para"><span>Array Size:</span> There might be situations in which, we may need to
+                    extend the queue to insert more
                     elements if we use an array to implement queue, It will almost be impossible to extend the array
                     size, therefore deciding the correct array size is always a problem in array implementation of
                     queue.</li>
-                  </ul>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">31. What are the scenarios in which an element can be inserted into the circular
+                  queue?</h5>
+                <ul class="read-para">
+                  <li class="read-para">If (rear + 1)%maxsize = front, the queue is full. In that case, overflow occurs
+                    and therefore, insertion can not be performed in the queue.</li>
+                  <li class="read-para">If rear != max - 1, the rear will be incremented to the mod(maxsize) and the new
+                    value will be inserted at the rear end of the queue.</li>
+                  <li>
+                    If front != 0 and rear = max - 1, it means that queue is not full therefore, set the value of rear
+                    to 0 and insert the new element there.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">32. What is a dequeue?</h5>
+                <p class="read-para">Dequeue (also known as double-ended queue) can be defined as an ordered set of
+                  elements in which the insertion and deletion can be performed at both the ends, i.e. front and rear.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">33. What is the minimum number of queues that can be used to implement a priority
+                  queue?</h5>
+                <p class="read-para">Two queues are needed. One queue is used to store the data elements, and another is
+                  used for storing priorities.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">34. Define the tree data structure.</h5>
+                <p class="read-para">The Tree is a recursive data structure containing the set of one or more data nodes
+                  where one node is designated as the root of the tree while the remaining nodes are called as the
+                  children of the root. The nodes other than the root node are partitioned into the nonempty sets where
+                  each one of them is to be called sub-tree.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">35. List the types of tree.</h5>
+                <p class="read-para">There are six types of tree given as follows.</p>
+                <ul class="read-para">
+                  <li>
+                    General Tree
+                  </li>
+                  <li>
+                    Forests
+                  </li>
+                  <li>
+                    Binary Tree
+                  </li>
+                  <li>
+                    Binary Search Tree
+                  </li>
+                  <li>
+                    Expression Tree
+                  </li>
+                  <li>
+                    Tournament Tree
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">36. What are Binary trees?</h5>
+                <p class="read-para">A binary Tree is a special type of generic tree in which, each node can have at
+                  most two children. Binary tree is generally partitioned into three disjoint subsets, i.e. the root of
+                  the node, left sub-tree and Right binary sub-tree.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">37. Write the C code to perform in-order traversal on a binary tree.</h5>
+                <code>
+                  void in-order(struct treenode *tree)  <br>
+                  {  <br>
+                      if(tree != NULL) <br>  
+                      {  <br>
+                          in-order(tree→ left); <br>  
+                          printf("%d",tree→ root);  <br>
+                          in-order(tree→ right);  <br>
+                      }  <br>
+                  } 
+                </code>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">38. What is the maximum number of nodes in a binary tree of height k?</h5>
+                <p class="read-para"> 2<sup>k+1-1</sup> where k >= 1</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">39. Which data structure suits the most in the tree construction?</h5>
+                <p class="read-para">Queue data structure</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">40. Which data structure suits the most in the tree construction?</h5>
+                <p class="read-para">Queue data structure</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">41. Write the recursive C function to count the number of nodes present in a binary
+                  tree.</h5>
+                <code>
+                  int count (struct node* t)  <br>
+                  {  <br>
+                      if(t) <br>  
+                      {  <br>
+                          int l, r; <br>  
+                          l = count(t->left); <br>  
+                          r=count(t->right);  <br>
+                          return (1+l+r);  <br>
+                      }  <br>
+                      else   <br>
+                      {  <br>
+                          return 0; <br>  
+                      }  <br>
+                  }  
+                </code>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">42. Write a recursive C function to calculate the height of a binary tree..</h5>
+                <code>
+                  int countHeight(struct node* t)  <br>
+                    {  <br>
+                        int l,r; <br>  
+                        if(!t)  <br>
+                            return 0; <br>  
+                        if((!(t->left)) && (!(t->right)))  <br> 
+                            return 0;  <br>
+                        l=countHeight(t->left); <br>  
+                        r=countHeight(t->right);  <br>
+                        return (1+((l>r)?l:r));  <br>
+                    }    
+                </code>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">43. How can AVL Tree be useful in all the operations as compared to Binary search
+                  tree?</h5>
+                <p class="read-para">AVL tree controls the height of the binary search tree by not letting it be skewed.
+                  The time taken for all operations in a binary search tree of height h is O(h). However, it can be
+                  extended to O(n) if the BST becomes skewed (i.e. worst case). By limiting this height to log n, AVL
+                  tree imposes an upper bound on each operation to be O(log n) where n is the number of nodes.</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">44. State the properties of B Tree.</h5>
+                <p class="read-para">A B tree of order m contains all the properties of an M way tree. In addition, it
+                  contains the following properties.</p>
+                <ul class="read-para">
+                  <li>
+                    Every node in a B-Tree contains at most m children.
+                  </li>
+                  <li>
+                    Every node in a B-Tree except the root node and the leaf node contain at least m/2 children.
+                  </li>
+                  <li>
+                    The root nodes must have at least 2 nodes.
+                  </li>
+                  <li>
+                    All leaf nodes must be at the same level.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">45. What are the differences between B tree and B+ tree?</h5>
+                <table class="table read-para">
+                  <thead class="thead-dark ">
+                    <tr>
+                      <th scope="col">SN</th>
+                      <th scope="col">B Tree</th>
+                      <th scope="col">B+ Tree</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Search keys cannot repeatedly be stored.</td>
+                      <td>Redundant search keys can be present.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Data can be stored in leaf nodes as well as internal nodes</td>
+                      <td>Data can only be stored on the leaf nodes.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Searching for some data is a slower process since data can be found on internal nodes as well
+                        as on the leaf nodes.</td>
+                      <td>Searching is comparatively faster as data can only be found on the leaf nodes.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Deletion of internal nodes is so complicated and time-consuming.</td>
+                      <td>Deletion will never be a complexed process since element will always be deleted from the leaf
+                        nodes.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Leaf nodes cannot be linked together.</td>
+                      <td>Leaf nodes are linked together to make the search operations more efficient.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">46. List some applications of Tree-data structure?</h5>
+                <p class="read-para">Applications of Tree- data structure:</p>
+                <ul class="read-para">
+                  <li>
+                    The manipulation of Arithmetic expression,
+                  </li>
+                  <li>
+                    Symbol Table construction,
+                  </li>
+                  <li>
+                    Syntax analysis
+                  </li>
+                  <li>
+                    Hierarchal data model
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">47. Define the graph data structure? </h5>
+                <p class="read-para">A graph G can be defined as an ordered set G(V, E) where V(G) represents the set of
+                  vertices and E(G) represents the set of edges which are used to connect these vertices. A graph can be
+                  seen as a cyclic tree, where the vertices (Nodes) maintain any complex relationship among them instead
+                  of having parent-child relations.</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">48. Differentiate among cycle, path, and circuit? </h5>
+                <ul class="read-para">
+                  <li class="read-para">
+                    <span>Path:</span> A Path is the sequence of adjacent vertices connected by the edges with no
+                    restrictions.
+                  </li>
+                  <li class="read-para">
+                    <span> Cycle:</span> A Cycle can be defined as the closed path where the initial vertex is identical
+                    to the end
+                    vertex. Any vertex in the path can not be visited twice
+                  </li>
+                  <li class="read-para">
+                    <span> Circuit:</span> A Circuit can be defined as the closed path where the intial vertex is
+                    identical to the end
+                    vertex. Any vertex may be repeated.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">49. Mention the data structures which are used in graph implementation. </h5>
+                <p class="read-para">For the graph implementation, following data structures are used. </p>
+
+                <ul class="read-para">
+                  <li class="read-para">
+                    In sequential representation, Adjacency matrix is used.
+                  </li>
+                  <li class="read-para">
+                    In Linked representation, Adjacency list is used.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">50. Which data structures are used in BFS and DFS algorithm?</h5>
+                <ul class="read-para">
+                  <li class="read-para">
+                    In BFS algorithm, Queue data structure is used.
+                  </li>
+                  <li class="read-para">
+                    In DFS algorithm, Stack data structure is used.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">51. What are the applications of Graph data structure?</h5>
+                <p class="read-para">The graph has the following applications:</p>
+                <ul class="read-para">
+                  <li class="read-para">
+                    Graphs are used in circuit networks where points of connection are drawn as vertices and component
+                    wires become the edges of the graph.
+                  </li>
+                  <li class="read-para">
+                    Graphs are used in transport networks where stations are drawn as vertices and routes become the
+                    edges of the graph.
+                  </li>
+                  <li class="read-para">
+                    Graphs are used in maps that draw cities/states/regions as vertices and adjacency relations as
+                    edges.
+                  </li>
+                  <li class="read-para">
+                    Graphs are used in program flow analysis where procedures or modules are treated as vertices and
+                    calls to these procedures are drawn as edges of the graph.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">54. In what scenario, Binary Search can be used?</h5>
+                <p class="read-para">Binary Search algorithm is used to search an already sorted list. The algorithm
+                  follows divide and conqer approach <br> <span>Example:</span></p>
+                <img src="https://static.javatpoint.com/interview/images/binary-search.png"
+                  alt="Binary search tree application">
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">55. What are the advantages of Binary search over linear search?</h5>
+                <p class="read-para">There are relatively less number of comparisons in binary search than that in
+                  linear search. In average case, linear search takes O(n) time to search a list of n elements while
+                  Binary search takes O(log n) time to search a list of n elements.</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">56. What are the advantages of Selecetion Sort?</h5>
+                <ul class="read-para">
+                  <li>
+                    It is simple and easy to implement.
+                  </li>
+                  <li>
+                    It can be used for small data sets.
+                  </li>
+                  <li>
+                    It is 60 per cent more efficient than bubble sort.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">57. List Some Applications of Multilinked Structures?</h5>
+                <ul class="read-para">
+                  <li>
+                    Sparse matrix,
+                  </li>
+                  <li>
+                    Index generation.
+                  </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">58. What is the difference between NULL and VOID?</h5>
+                <ul class="read-para">
+                  <li>
+                    Null is actually a value, whereas Void is a data type identifier.
+                  </li>
+                  <li>
+                    A null variable simply indicates an empty value, whereas void is used to identify pointers as having
+                    no
+                    initial size.
+                  </li>
+                </ul>
                 <hr>
               </li>
 
             </ol>
+
+            <p><span style="font-weight: bolder;">Last Updated: </span><span id="date"></span></p>
           </div>
 
           <!-- Trending Technology Cards -->
@@ -734,6 +1128,10 @@
     });
 
 
+  </script>
+  <script>
+    var date = new Date(2021, 1, 20);
+    document.getElementById("date").innerHTML = date;
   </script>
 </body>
 
