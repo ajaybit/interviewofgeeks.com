@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Home-Interview of Geeks</title>
+  <title>Data Structure Interview Quetions-Interview of Geeks</title>
   <link rel="icon" href="../img/favicon.png">
 
   <link rel="stylesheet" href="../style/style.css">
@@ -164,6 +164,173 @@
                 <h5 class="question">6. Which data structure is used to perform recursion?</h5>
                 <p class="read-para">Stack data structure is used in recursion due to its last in first out nature.
                   Operating system maintains the stack in order to save the iteration variables at each function call
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">7. What is a Stack?</h5>
+                <p class="read-para">Stack is an ordered list in which, insertion and deletion can be performed only at
+                  one end that is called the top. It is a recursive data structure having pointer to its top element.
+                  The stack is sometimes called as Last-In-First-Out (LIFO) list i.e. the element which is inserted
+                  first in the stack will be deleted last from the stack.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">8. List the area of applications where stack data structure can be used?</h5>
+                <ul class="read-para">
+                  <li>Expression evaluation</li>
+                  <li>Backtracking</li>
+                  <li>Memory Management</li>
+                  <li>Function calling and return</li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">9. What are the operations that can be performed on a stack?</h5>
+                <ul class="read-para">
+                  <li>Push Operations</li>
+                  <li>Pop Operations</li>
+                  <li>Peek Operations</li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">10. Write the stack overflow condition.</h5>
+                <p class="read-para">Overflow occurs when <span>top = Maxsize -1</span></p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">11. What is the difference between PUSH and POP?</h5>
+                <p class="read-para">
+                  PUSH and POP operations specify how data is stored and retrieved in a stack. <br>
+                  <span>PUSH:</span> PUSH specifies that data is being "inserted" into the stack. <br>
+                  <span>POP:</span> POP specifies data retrieval. It means that data is being deleted from the stack.
+                  <hr>
+              </li>
+
+              <li>
+                <h5 class="question">12. Write the steps involved in the insertion and deletion of an element in the
+                  stack.</h5>
+                <p class="read-para">
+                  <span>Push:</span>
+                </p>
+                <ul class="read-para">
+                  <li>Increment the variable top so that it can refer to the next memory allocation</li>
+                  <li>Copy the item to the at the array index value equal to the top</li>
+                  <li>Repeat step 1 and 2 until stack overflows</li>
+                </ul>
+                <p class="read-para">
+                  <span>Pop:</span>
+                <ul class="read-para">
+                  <li>Store the topmost element into the an another variable</li>
+                  <li>Decrement the value of the top</li>
+                  <li>Return the topmost element</li>
+                </ul>
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">13. What is a postfix expression?</h5>
+                <p class="read-para">
+                  An expression in which operators follow the operands is known as postfix expression. The main benefit
+                  of this form is that there is no need to group sub-expressions in parentheses or to consider operator
+                  precedence. <br>
+                  <br>The expression "a + b" will be represented as "ab+" in postfix notation.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">14. Write the postfix form of the expression: (A + B) * (C - D) </h5>
+                <p class="read-para">
+                  AB+CD-*
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">15. Which notations are used in Evaluation of Arithmetic Expressions using prefix
+                  and postfix forms?</h5>
+                <p class="read-para">
+                  Polish and Reverse Polish notations.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">16. What is an array?</h5>
+                <p class="read-para">
+                  Arrays are defined as the collection of similar types of data items stored at contiguous memory
+                  locations. It is the simplest data structure in which each data element can be randomly accessed by
+                  using its index number.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">17. How to reference all the elements in a one-dimension array?</h5>
+                <p class="read-para">
+                  It can be done by using an indexed loop such that the counter runs from 0 to the array size minus one.
+                  In this manner, you can reference all the elements in sequence by using the loop counter as the array
+                  subscript.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">18. What is a multidimensional array?</h5>
+                <p class="read-para">
+                  The multidimensional array can be defined as the array of arrays in which, the data is stored in
+                  tabular form consists of rows and columns. 2D arrays are created to implement a relational database
+                  lookalike data structure. It provides ease of holding the bulk of data at once which can be passed to
+                  any number of functions wherever required.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">19. How are the elements of a 2D array are stored in the memory?</h5>
+                <p class="read-para">
+                  There are two techniques by using which, the elements of a 2D array can be stored in the memory.
+                  <br><br>
+                <ul class="read-para">
+                  <li class="read-para"><span>Row-Major Order:</span> In row-major ordering, all the rows of the 2D
+                    array are stored into the memory
+                    contiguously. First, the 1st row of the array is stored into the memory completely, then the 2nd row
+                    of the array is stored into the memory completely and so on till the last row.
+                  </li>
+                  <li class="read-para">
+                    <span>Column-Major Order:</span> In column-major ordering, all the columns of the 2D array are
+                    stored into the
+                    memory contiguously. first, the 1st column of the array is stored into the memory completely, then
+                    the 2nd row of the array is stored into the memory completely and so on till the last column of the
+                    array.
+                  </li>
+                </ul>
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">20. Calculate the address of a random element present in a 2D array, given base
+                  address as BA.</h5>
+                <p class="read-para">
+                  <span>Row-Major Order: </span>If array is declared as a[m][n] where m is the number of rows while n is
+                  the number
+                  of columns, then address of an element a[i][j] of the array stored in row major order is calculated
+                  as,
+                  <br><br>
+                  <span>Address(a[i][j]) = B. A. + (i * n + j) * size</span> <br><br>
+                  <span>Column-Major Order:</span> If array is declared as a[m][n] where m is the number of rows while n
+                  is the number of columns, then address of an element a[i][j] of the array stored in column major order
+                  is calculated as <br><br> <span>Address(a[i][j]) = ((j*m)+i)*Size + BA.</span>
                 </p>
                 <hr>
               </li>
