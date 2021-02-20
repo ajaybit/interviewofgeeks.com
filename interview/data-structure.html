@@ -335,18 +335,188 @@
                 <hr>
               </li>
 
+              <li>
+                <h5 class="question">21. Define Linked List Data structure.</h5>
+                <img src="../img/linked-list-1.png" alt="Linked List representaion diagram">
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">22. Are linked lists considered linear or non-linear data structures?</h5>
+                <p class="read-para"> A linked list is considered both linear and non-linear data structure depending
+                  upon the situation. <br><br>
+                </p>
+                <ul class="read-para">
+                  <li>On the basis of data storage, it is considered as a non-linear data structure.</li>
+                  <li>On the basis of the access strategy, it is considered as a linear data-structure.</li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">23. What are the advantages of Linked List over an array?</h5>
+                <ul class="read-para">
+                  <li>The size of a linked list can be incremented at runtime which is impossible in the case of the
+                    array.</li>
+                  <li> The List is not required to be contiguously present in the main memory, if the contiguous space
+                    is not available, the nodes can be stored anywhere in the memory connected through the links.</li>
+                  <li> The List is dynamically stored in the main memory and grows as per the program demand while the
+                    array is statically stored in the main memory, size of which must be declared at compile time.</li>
+                  <li> The number of elements in the linked list are limited to the available memory space while the
+                    number of elements in the array is limited to the size of an array.</li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">24. Write the syntax in C to create a node in the singly linked list.</h5>
+                <code>
+                  struct node  <br> 
+                  {  <br>
+                      int data; <br>  
+                      struct node *next; <br>  
+                  };  <br>
+                  struct node *head, *ptr; <br>   
+                  ptr = (struct node *)malloc(sizeof(struct node)); <br> 
+                </code>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">25. If you are using C language to implement the heterogeneous linked list, what
+                  pointer type should be used?</h5>
+                <p class="read-para">The heterogeneous linked list contains different data types, so it is not possible
+                  to use ordinary pointers for this. For this purpose, you have to use a generic pointer type like void
+                  pointer because the void pointer is capable of storing a pointer to any type.</p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">26. What is doubly linked list?</h5>
+                <p class="read-para">The doubly linked list is a complex type of linked list in which a node contains a
+                  pointer to the previous as well as the next node in the sequence. In a doubly linked list, a node
+                  consists of three parts: </p> <br>
+                <ul class="read-para">
+                  <li>node data</li>
+                  <li>pointer to the next node in sequence (next pointer)</li>
+                  <li>pointer to the previous node (previous pointer). </li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">27. Write the C program to insert a node in circular singly list at the beginning.
+                </h5>
+                <code>
+                  #include<stdio.h> <br>
+                    #include<stdlib.h>  <br>
+                    void beg_insert(int); <br> 
+                    struct node  <br>
+                    {  <br>
+                        int data; <br> 
+                        struct node *next; <br> 
+                    };  <br>
+                    struct node *head; <br> 
+                    void main ()  <br>
+                    {  <br>
+                        int choice,item; <br> 
+                        do   <br>
+                        {  <br>
+                            printf("\nEnter the item which you want to insert?\n");<br>  
+                            scanf("%d",&item);  <br>
+                            beg_insert(item);  <br>
+                            printf("\nPress 0 to insert more ?\n"); <br> 
+                            scanf("%d",&choice); <br> 
+                        }while(choice == 0);  <br>
+                    }  
+                    void beg_insert(int item)   <br> 
+                    {    <br>
+                            
+                        struct node *ptr = (struct node *)malloc(sizeof(struct node));   <br> 
+                        struct node *temp;  <br>
+                        if(ptr == NULL)    <br>
+                        {    <br>
+                            printf("\nOVERFLOW");    <br>
+                        }    <br>
+                        else     <br>
+                        {    <br>
+                            ptr -> data = item;    <br>
+                            if(head == NULL)    <br>
+                            {    <br>
+                                head = ptr;    <br>
+                                ptr -> next = head;    <br>
+                            }    <br>
+                            else     <br>
+                            {       <br>
+                                temp = head;    
+                                while(temp->next != head)    <br>
+                                    temp = temp->next;    <br>
+                                ptr->next = head;     <br>
+                                temp -> next = ptr;     <br>
+                                head = ptr;    <br>
+                            }     
+                        printf("\nNode Inserted\n");  <br>
+                        }    <br>
+                                    
+                    }  <br>
+                </code>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">28. Define the queue data structure.</h5>
+                <p class="read-para">A queue can be defined as an ordered list which enables insert operations to be
+                  performed at one end called REAR and delete operations to be performed at another end called FRONT.
+                </p>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">29. List some applications of queue data structure.</h5>
+                <p class="read-para">The Applications of the queue is given as follows:
+                </p>
+                <ul class="read-para">
+                  <li>Queues are widely used as waiting lists for a single shared resource like a printer, disk, CPU.
+                  </li>
+                  <li>Queues are used in the asynchronous transfer of data (where data is not being transferred at the
+                    same rate between two processes) for eg. pipes, file IO, sockets.</li>
+                  <li>Queues are used as buffers in most of the applications like MP3 media player, CD player, etc.</li>
+                  <li>Queues are used to maintain the playlist in media players to add and remove the songs from the
+                    play-list.</li>
+                  <li>Queues are used in operating systems for handling interrupts.</li>
+                </ul>
+                <hr>
+              </li>
+
+              <li>
+                <h5 class="question">30. What are the drawbacks of array implementation of Queue?</h5>
+                <ul class="read-para">
+                  <li class="read-para"><span>Memory Wastage:</span> The space of the array, which is used to store
+                    queue elements, can never be reused
+                    to store the elements of that queue because the elements can only be inserted at front end and the
+                    value of front might be so high so that, all the space before that, can never be filled.Queues are
+                    widely used as waiting lists for a single shared resource like a printer, disk, CPU.</li>
+                  <li class="read-para"><span>Array Size:</span> There might be situations in which, we may need to extend the queue to insert more
+                    elements if we use an array to implement queue, It will almost be impossible to extend the array
+                    size, therefore deciding the correct array size is always a problem in array implementation of
+                    queue.</li>
+                  </ul>
+                <hr>
+              </li>
+
             </ol>
           </div>
 
           <!-- Trending Technology Cards -->
-          <h5 style="font-weight: bolder;">Trending Technologies</h5>
+          <h5 style="font-weight: bolder;">Trending Technologies Interview Questions</h5>
 
           <!-- First Row -->
           <div class="row" style="margin-top: 25px;">
             <div class="col ">
-              <a href="#" style="text-decoration: none;">
+              <a href="ai.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/ai.jpg" alt="Artificial intelegence Image" style="height: 175px;">
+                  <img class="card-img-top" src="../img/ai.jpg" alt="Artificial intelegence Image"
+                    style="height: 175px;">
                   <div class="card-body">
                     <p class="card-text">Artificial Intelegence (AI)</p>
                   </div>
@@ -354,9 +524,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="aws.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/aws.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/aws.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">AWS</p>
                   </div>
@@ -364,9 +534,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="selenium.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/selenium.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/selenium.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Selenium</p>
                   </div>
@@ -374,9 +544,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="react.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/react.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/react.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">React</p>
                   </div>
@@ -388,9 +558,9 @@
           <!-- Second Row -->
           <div class="row" style="margin-top: 25px;">
             <div class="col ">
-              <a href="#" style="text-decoration: none;">
+              <a href="cloud.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/cloud.png" alt="Artificial intelegence Image"
+                  <img class="card-img-top" src="../img/cloud.png" alt="Artificial intelegence Image"
                     style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Cloud</p>
@@ -399,9 +569,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="hadoop.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/hadoop.svg" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/hadoop.svg" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Hadoop</p>
                   </div>
@@ -409,9 +579,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="data-science.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/data-science.jpg" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/data-science.jpg" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Data Science</p>
                   </div>
@@ -419,9 +589,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="angular.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/angular.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/angular.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Angular</p>
                   </div>
@@ -433,9 +603,9 @@
           <!-- Third Row -->
           <div class="row" style="margin-top: 25px;">
             <div class="col ">
-              <a href="#" style="text-decoration: none;">
+              <a href="block-chain.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/blockchain.png" alt="Artificial intelegence Image"
+                  <img class="card-img-top" src="../img/blockchain.png" alt="Artificial intelegence Image"
                     style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Blockchain</p>
@@ -444,9 +614,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="git.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/git.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/git.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Git</p>
                   </div>
@@ -454,9 +624,9 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="ml.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/ml.png" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/ml.png" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">Machine Learning</p>
                   </div>
@@ -464,59 +634,11 @@
               </a>
             </div>
             <div class="col">
-              <a href="#" style="text-decoration: none;">
+              <a href="devops.html" style="text-decoration: none;">
                 <div class="card">
-                  <img class="card-img-top" src="img/devops.jpg" alt="Card image cap" style="height: 175px;">
+                  <img class="card-img-top" src="../img/devops.jpg" alt="Card image cap" style="height: 175px;">
                   <div class="card-body"><br>
                     <p class="card-text">DevOps</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Programming Language Cards -->
-          <h5 style="font-weight: bolder; margin-top: 25px;">Programming Languages</h5>
-
-          <!-- First Row -->
-          <div class="row" style="margin-top: 25px;">
-            <div class="col ">
-              <a href="#" style="text-decoration: none;">
-                <div class="card">
-                  <img class="card-img-top" src="img/python.png" alt="Artificial intelegence Image"
-                    style="height: 175px;">
-                  <div class="card-body"><br>
-                    <p class="card-text">Python</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" style="text-decoration: none;">
-                <div class="card">
-                  <img class="card-img-top" src="img/java.png" alt="Card image cap" style="height: 175px;">
-                  <div class="card-body"><br>
-                    <p class="card-text">Java</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" style="text-decoration: none;">
-                <div class="card">
-                  <img class="card-img-top" src="img/js.png" alt="Card image cap" style="height: 175px;">
-                  <div class="card-body"><br>
-                    <p class="card-text">JavaScript</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" style="text-decoration: none;">
-                <div class="card">
-                  <img class="card-img-top" src="img/swift.png" alt="Card image cap" style="height: 175px;">
-                  <div class="card-body"><br>
-                    <p class="card-text">Swift</p>
                   </div>
                 </div>
               </a>
