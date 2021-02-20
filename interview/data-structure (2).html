@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-<html>
-
 <head>
+  <meta charset="UTF-8">
   <title>Data Structure Interview Quetions-Interview of Geeks</title>
   <link rel="icon" href="../img/favicon.png">
   <link rel="stylesheet" href="../style/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- scripts -->
+  <script src="../js/practice.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -26,18 +27,25 @@
     gtag('config', 'G-ZX3ZK4E5HC');
   </script>
 
-  <style>
-    body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgb(250, 250, 250);
-  }
-  </style>
 
+  <style>
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 5000px;
+      background-color: #ffffff;
+      background-image: url("");
+      background-repeat: no_repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  </style>
 </head>
-<!-- Header -->
 
 <body>
 
+  <div ></div>
+  <div id="particles-js"></div>
   <div class="">
     <nav class="navbar bg-white">
       <a href="../index.html"><span class="navbar-brand mb-0 h1"><img src="../img/iG.png" alt=""></span></a>
@@ -82,8 +90,8 @@
     </nav>
 
     <!-- Main div -->
-    <div class="container  ">
-      <div class="row" style="margin-top: 25px;">
+    <div class="container" style="position: absolute; transform: translate(3%,0%); margin-top: 25px;">
+      <div class="row">
         <div class="col-md-8 bg-white shadow-sm">
           <span>
             <h4 class="hm-welcome">Data Structure Interview Questions</h4>
@@ -138,7 +146,6 @@
                 </p>
                 <hr>
               </li>
-
               <li>
                 <h5 class="question">4. What is the difference between file structure and storage structure?</h5>
                 <p class="read-para">Difference between file structure and storage structure: <br> The main difference
@@ -207,7 +214,6 @@
                 <p class="read-para">Overflow occurs when <span>top = Maxsize -1</span></p>
                 <hr>
               </li>
-
               <li>
                 <h5 class="question">11. What is the difference between PUSH and POP?</h5>
                 <p class="read-para">
@@ -337,7 +343,6 @@
                 </p>
                 <hr>
               </li>
-
               <li>
                 <h5 class="question">21. Define Linked List Data structure.</h5>
                 <img src="../img/linked-list-1.png" alt="Linked List representaion diagram">
@@ -902,7 +907,6 @@
 
             <p><span style="font-weight: bolder;">Last Updated: </span><span id="date"></span></p>
           </div><br>
-
           <!-- Trending Technology Cards -->
           <h5 style="font-weight: bolder;">Trending Technologies Interview Questions</h5>
 
@@ -1046,17 +1050,17 @@
 
         <div class="col-md-4">
           <!-- ************************************This is Right Div ***************************************** -->
-          <div>
+          <h1>this is heading</h1>
 
-
-
-          </div>
         </div>
       </div>
-    </div><br>
+    </div>
+
+    <div>this is div</div>
+  
 
     <!-- Footer -->
-    <div class="continer border-top">
+    <div class="continer border-top" style="position: static; transform: translate(0%,0%);top:13750px">
       <div class="row bg-white">
         <div class="col">
           <div class="navbar-brand mb-0 h1">
@@ -1106,15 +1110,31 @@
 
     <div class="row" style="background-color: #308D46;"><span
         style="margin: 15px 0 15px 25px; font-size: large; font-weight: bolder;color: white;">@InterviewofGeeks, Some
-        rights reserved.</span> </div>
+        rights reserved.</span>
+    </div>
+
+
+<!-- Primary Div Ends -->
+</div>
+
+
+
+
+
+
+
 
     <!-- up Arrow -->
     <a href="#top" class="up-arrow">
       <img src="../img/up-arrow.svg" />
     </a>
 
-    <!-- Primary Div Ends -->
-  </div>
+
+
+
+
+
+  <!-- Stay Way from this code ????????????????????????????????????????????????? -->
 
   <script>
     $(document).ready(function () {
@@ -1132,12 +1152,123 @@
 
       // document ready  
     });
+
+
   </script>
+
   <script>
     var date = new Date(2021, 1, 20);
     document.getElementById("date").innerHTML = date;
   </script>
 
+  <script>
+    // ParticlesJS Config.
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#000000"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1.5,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#000000",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 
 </html>
