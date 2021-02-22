@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(231, 236, 228);
+    overflow-x: hidden;
+}
+
 .navbar-brand > img{
     width: 225px;
     margin-left: 25px;
@@ -125,7 +132,7 @@
 code {
     font-family: Consolas,"courier new";
     color: crimson;
-    background-color: #f1f1f1;
+    background-color: #e0e0e0;
     padding: 2px;
     font-size: 105%;
   }
@@ -138,5 +145,102 @@ code {
 
   /* Right Div++++++++++++++++++++++++++++++++++++ */
 
+
+  /* ######################################    MEDIA QUERIES    ################################# */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+
   /* SPECIAL SYMBOL */
   /* &#60;stdio.h&#62; */
+
+
+  /* Aside */
+div.aside {
+    background: #FFFFFF;
+    /* border: 1px solid #D9D2D0; */
+    border-radius: 3px;
+    width: 350px;
+
+    }
+    
+div.aside > h3 {
+      font-weight: bold;
+      color: #308D46;
+      font-stretch:normal;
+      font-size: 30px;
+      border-bottom: 1px solid #D9D2D0;
+      padding: 10px
+    }
+    
+div.list li {
+    height: auto;
+    list-style: none;
+}
+
+div.list li:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+    
+div.list li a {
+    line-height: 18px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+div.list li a:hover {
+    line-height: 18px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #308D46;
+    font-weight: bold;
+    }
+    
+div.more {
+    border-top: 1px solid #D9D2D0;
+    text-align: right;
+    color: #026EAD;
+}
+    
+div.more a {
+    font-size: 12px;
+    position: relative;
+    right: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration:none;
+}
+    
+div.more a:hover {
+    right: 10px;
+    }
+    li, a, a:after, a:hover:after, button {
+    cursor: pointer;
+    transition: all 0.25s ease;
+    }
+    div.more a:after {
+    content:"\2192";
+    position: relative;
+    right: 10px;
+    opacity: 0;
+    }
+      
+div.more a:hover:after {
+content:"\2192";
+right: -5px;
+opacity: 1;
+}    

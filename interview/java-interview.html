@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Interview Questions -Interview of Geeks</title>
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <meta name="description" content="Word largest site of geeks interview preperation">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX3ZK4E5HC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZX3ZK4E5HC');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgb(250, 250, 250);
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+<!-- Header -->
+
+<body>
+
+    <div class="">
+        <nav class="navbar bg-white" id="siteloog">
+            <a href="../index.html"><span class="navbar-brand mb-0 h1"><img src="../img/iG.png" alt=""></span></a>
+        </nav>
+        <!-- Header Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-structure.html">Data Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithm.html">Algorithm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-interview.html">Company Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical-interview.html">Technical Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-interview.html">Web Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="java-interview.html">Java Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="database-interview.html">Data Base Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-interview.html">Python Interview</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main div -->
+        <div class="container  ">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-md-8 bg-white shadow-sm">
+                    <span>
+                        <h4 class="hm-welcome">Core java Interview Questions Interview Questions</h4>
+                    </span><span>1- 50 out of 300 Questions</span>
+
+                    <hr class="divider">
+                    <p class="read-para">There is the list of 300 core Java interview questions. If there is any
+                        core Java interview
+                        question that has been asked to you, kindly post it in the ask question section. We assure
+                        that you will get here the 90% frequently asked interview questions and answers. <br><br> The
+                        answers to the Core Java interview questions are short and to the point. The core Java
+                        interview questions are categorized in Basics of Java interview questions, OOPs interview
+                        questions, String Handling interview questions, Multithreading interview questions,
+                        collection interview questions, JDBC interview questions, etc.</p>
+                    <br>
+
+                    <div>
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item active">
+                                    <a class="page-link" href="java-interview.html">1<span
+                                            class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="page-item ">
+                                    <a class="page-link" href="java-interview-2.html">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="java-interview-3.html">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="java-interview-4.html">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="java-interview-5.html">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="java-interview-6.html">6</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <ol class="qa-list" id="javabasicquestions">
+                            <li>
+                                <h5 class="question">1. What is Java?</h5>
+                                <p class="read-para"><span>Java</span> is the high-level, <span>object-oriented</span>,
+                                    robust, secure programming
+                                    language, platform-independent, high performance, Multithreaded, and portable
+                                    programming language. It was developed by <span>James Gosling</span> in June 1991.
+                                    It can also be
+                                    known as the platform as it provides its own JRE and API.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">2. What are the differences between C++ and Java?</h5>
+                                <p class="read-para">The differences between C++ and Java are given in the following
+                                    table.</p>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col">Comparision Index</th>
+                                            <th scope="col">C++</th>
+                                            <th scope="col">Java</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <th scope="row" style="width: 15%;">Platform-independent</th>
+                                            <td style="width: 40%;">C++ is platform-dependent.</td>
+                                            <td style="width: 45%;">Java is platform-independent.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mainly used for</th>
+                                            <td>C++ is mainly used for system programming.</td>
+                                            <td>Java is mainly used for application programming. It is widely used in
+                                                window, web-based, enterprise and mobile applications.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Design Goal</th>
+                                            <td>C++ was designed for systems and applications programming. It was an
+                                                extension of C programming language.</td>
+                                            <td>Java was designed and created as an interpreter for printing systems but
+                                                later extended as a support network computing. It was designed with a
+                                                goal of being easy to use and accessible to a broader audience.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Goto</th>
+                                            <td>C++ supports the goto statement.</td>
+                                            <td>Java doesn't support the goto statement.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Multiple inheritance</th>
+                                            <td>C++ supports multiple inheritance.</td>
+                                            <td>Java doesn't support multiple inheritance through class. It can be
+                                                achieved by interfaces in java.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Operator Overloading</th>
+                                            <td>C++ supports operator overloading.</td>
+                                            <td>Java doesn't support operator overloading.</td>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Pointers</th>
+                                            <td>C++ supports pointers. You can write pointer program in C++.</td>
+                                            <td>Java supports pointer internally. However, you can't write the pointer
+                                                program in java. It means java has restricted pointer support in Java.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Compiler and Interpreter</th>
+                                            <td>C++ uses compiler only. C++ is compiled and run using the compiler which
+                                                converts source code into machine code so, C++ is platform dependent.
+                                            </td>
+                                            <td>Java uses compiler and interpreter both. Java source code is converted
+                                                into bytecode at compilation time. The interpreter executes this
+                                                bytecode at runtime and produces output. Java is interpreted that is why
+                                                it is platform independent.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Call by Value and Call by reference</th>
+                                            <td>C++ supports both call by value and call by reference.
+                                            </td>
+                                            <td>Java supports call by value only. There is no call by reference in java.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Structure and Union </th>
+                                            <td>C++ supports structures and unions.
+                                            </td>
+                                            <td>Java doesn't support structures and unions.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Thread Support </th>
+                                            <td>C++ doesn't have built-in support for threads. It relies on third-party
+                                                libraries for thread support.
+                                            </td>
+                                            <td>Java has built-in thread support.
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Documentation comment </th>
+                                            <td>C++ doesn't support documentation comment.
+                                            </td>
+                                            <td>Java supports documentation comment (/** ... */) to create documentation
+                                                for java source code.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Virtual Keyword </th>
+                                            <td>C++ supports virtual keyword so that we can decide whether or not
+                                                override a function.
+                                            </td>
+                                            <td>Java has no virtual keyword. We can override all non-static methods by
+                                                default. In other words, non-static methods are virtual by default.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">unsigned right shift >>> </th>
+                                            <td>C++ doesn't support >>> operator.
+                                            </td>
+                                            <td>Java supports unsigned right shift >>> operator that fills zero at the
+                                                top for the negative numbers. For positive numbers, it works same like
+                                                >> operator.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Inheritance Tree </th>
+                                            <td>C++ creates a new inheritance tree always.
+                                            </td>
+                                            <td>Java uses a single inheritance tree always because all classes are the
+                                                child of Object class in java. The object class is the root of the
+                                                inheritance tree in java.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Hardware</th>
+                                            <td>C++ is nearer to hardware.
+                                            </td>
+                                            <td>Java is not so interactive with hardware.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Object-oriented </th>
+                                            <td>C++ is an object-oriented language. However, in C language, single root
+                                                hierarchy is not possible.
+                                            </td>
+                                            <td>Java is also an object-oriented language. However, everything (except
+                                                fundamental types) is an object in Java. It is a single root hierarchy
+                                                as everything gets derived from java.lang.Object.
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">3. List the features of Java Programming language.</h5>
+                                <p class="read-para">There are the following features in Java Programming Language.
+                                <ul class="read-para">
+                                    <li>
+                                        <spna style="font-weight: bolder;">Simple:</spna> Java is easy to learn. The
+                                        syntax of Java is based on C++ which makes
+                                        easier to write the program in it.
+                                    </li>
+                                    <li><span style="font-weight: bolder;">Object-Oriented:</span> Java follows the
+                                        object-oriented paradigm which allows us to
+                                        maintain our code as the combination of different type of objects that
+                                        incorporates both data and behavior.</li>
+                                    <li><span style="font-weight: bolder;">Portable:</span> Java supports
+                                        read-once-write-anywhere approach. We can execute the
+                                        Java program on every machine. Java program (.java) is converted to bytecode
+                                        (.class) which can be easily run on every machine.</li>
+                                    <li><span style="font-weight: bolder;">Platform Independent:</span> Java is a
+                                        platform independent programming language. It is
+                                        different from other programming languages like C and C++ which needs a platform
+                                        to be executed. Java comes with its platform on which its code is executed. Java
+                                        doesn't depend upon the operating system to be executed.</li>
+                                    <li><span style="font-weight: bolder;">Secured:</span> Java is secured because it
+                                        doesn't use explicit pointers. Java also
+                                        provides the concept of ByteCode and Exception handling which makes it more
+                                        secured.</li>
+                                    <li><span style="font-weight: bolder;">Robust:</span> Java is a strong programming
+                                        language as it uses strong memory
+                                        management. The concepts like Automatic garbage collection, Exception handling,
+                                        etc. make it more robust.</li>
+                                    <li><span style="font-weight: bolder;">Architecture Neutral: </span>Java is
+                                        architectural neutral as it is not dependent on
+                                        the architecture. In C, the size of data types may vary according to the
+                                        architecture (32 bit or 64 bit) which doesn't exist in Java.</li>
+                                    <li><span style="font-weight: bolder;">High Performance:</span> Java is faster than
+                                        other traditional interpreted programming
+                                        languages because Java bytecode is "close" to native code. It is still a little
+                                        bit slower than a compiled language (e.g., C++).</li>
+                                    <li><span style="font-weight: bolder;">Multithreaded:</span> We can write Java
+                                        programs that deal with many tasks at once by
+                                        defining multiple threads. The main advantage of multi-threading is that it
+                                        doesn't occupy memory for each thread. It shares a common memory area. Threads
+                                        are important for multi-media, Web applications, etc.</li>
+                                    <li><span style="font-weight: bolder;">Distributed:</span> Java is distributed
+                                        because it facilitates users to create
+                                        distributed applications in Java. RMI and EJB are used for creating distributed
+                                        applications. This feature of Java makes us able to access files by calling the
+                                        methods from any machine on the internet.
+                                    </li>
+                                    <li><span style="font-weight: bolder;">Dynamic:</span> Java is a dynamic language.
+                                        It supports dynamic loading of classes. It
+                                        means classes are loaded on demand. It also supports functions from its native
+                                        languages, i.e., C and C++.
+                                    </li>
+                                </ul>
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">4. What do you understand by Java virtual machine?</h5>
+                                <p class="read-para">Java Virtual Machine is a virtual machine that enables the computer
+                                    to run the Java program. JVM acts like a run-time engine which calls the main method
+                                    present in the Java code. JVM is the specification which must be implemented in the
+                                    computer system. The Java code is compiled by JVM to be a Bytecode which is machine
+                                    independent and close to the native code.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">5. What is the difference between JDK, JRE, and JVM?</h5>
+                                <p class="read-para">
+                                    <span>JVM:</span><br><br>
+                                    JVM is an acronym for Java Virtual Machine; it is an abstract machine which provides
+                                    the runtime environment in which Java bytecode can be executed. It is a
+                                    specification which specifies the working of Java Virtual Machine. Its
+                                    implementation has been provided by Oracle and other companies. Its implementation
+                                    is known as JRE.
+                                    <br><br>
+                                    JVMs are available for many hardware and software platforms (so JVM is platform
+                                    dependent). It is a runtime instance which is created when we run the Java class.
+                                    There are three notions of the JVM: specification, implementation, and instance.
+                                    <br><br>
+                                    <span>JRE</span> <br><br>
+                                    JRE stands for Java Runtime Environment. It is the implementation of JVM. The Java
+                                    Runtime Environment is a set of software tools which are used for developing Java
+                                    applications. It is used to provide the runtime environment. It is the
+                                    implementation of JVM. It physically exists. It contains a set of libraries + other
+                                    files that JVM uses at runtime.
+                                    <br><br>
+                                    <span>JDK</span> <br><br>
+                                    JDK is an acronym for Java Development Kit. It is a software development environment
+                                    which is used to develop Java applications and applets. It physically exists. It
+                                    contains JRE + development tools. JDK is an implementation of any one of the below
+                                    given Java Platforms released by Oracle Corporation:
+                                </p>
+                                <ul class="read-para">
+                                    <li>Standard Edition Java Platform</li>
+                                    <li>Enterprise Edition Java Platform
+                                    </li>
+                                    <li>Micro Edition Java Platform
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">6. How many types of memory areas are allocated by JVM?</h5>
+                                <p class="read-para">Many types:
+                                </p><br>
+                                <ol>
+                                    <li class="read-para"><span>Class(Method) Area:</span> Class Area stores per-class
+                                        structures such as the runtime constant pool, field, method data, and the code
+                                        for methods.
+                                    </li>
+                                    <li class="read-para"><span>Heap:</span> It is the runtime data area in which the
+                                        memory is allocated to the objects
+                                    </li>
+                                    <li class="read-para"><span>Stack:</span> Java Stack stores frames. It holds local
+                                        variables and partial results, and plays a part in method invocation and return.
+                                        Each thread has a private JVM stack, created at the same time as the thread. A
+                                        new frame is created each time a method is invoked. A frame is destroyed when
+                                        its method invocation completes.
+                                    </li>
+                                    <li class="read-para"><span>Program Counter Register:</span> PC (program counter)
+                                        register contains the address of the Java virtual machine instruction currently
+                                        being executed.
+                                    </li>
+                                    <li class="read-para"><span>Native Method Stack:</span> It contains all the native
+                                        methods used in the application.
+                                    </li>
+                                </ol>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">7. What is JIT compiler?</h5>
+                                <p class="read-para"><span>Just-In-Time(JIT) compiler:</span> It is used to improve the
+                                    performance.
+                                    JIT compiles parts of the bytecode that have similar functionality at the same time,
+                                    and hence reduces the amount of time needed for compilation. Here the term
+                                    “compiler” refers to a translator from the instruction set of a Java virtual machine
+                                    (JVM) to the instruction set of a specific CPU.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">8. What is the platform?</h5>
+                                <p class="read-para">A platform is the hardware or software environment in which a piece
+                                    of software is executed. There are two types of platforms, software-based and
+                                    hardware-based. Java provides the software-based platform.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">9. What are the main differences between the Java platform and
+                                    other platforms?</h5>
+                                <p class="read-para">There are the following differences between the Java platform and
+                                    other platforms.
+                                </p>
+                                <ul class="read-para">
+                                    <li>Java is the software-based platform whereas other platforms may be the hardware
+                                        platforms or software-based platforms.
+                                    </li>
+                                    <li>Java is executed on the top of other hardware platforms whereas other platforms
+                                        can only have the hardware components.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">10. What gives Java its 'write once and run anywhere' nature?</h5>
+                                <p class="read-para">The bytecode. Java compiler converts the Java programs into the
+                                    class file (Byte Code) which is the intermediate language between source code and
+                                    machine code. This bytecode is not platform specific and can be executed on any
+                                    computer.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">11. What is classloader?</h5>
+                                <p class="read-para">Classloader is a subsystem of JVM which is used to load class
+                                    files. Whenever we run the java program, it is loaded first by the classloader.
+                                    There are three built-in classloaders in Java.
+                                </p><br>
+                                <ol>
+                                    <li class="read-para"><span>Bootstrap ClassLoader:</span> This is the first
+                                        classloader which is the superclass of
+                                        Extension classloader. It loads the rt.jar file which contains all class files
+                                        of Java Standard Edition like java.lang package classes, java.net package
+                                        classes, java.util package classes, java.io package classes, java.sql package
+                                        classes, etc.
+                                    </li>
+                                    <li class="read-para"><span>Extension ClassLoader: </span>This is the child
+                                        classloader of Bootstrap and parent
+                                        classloader of System classloader. It loads the jar files located inside
+                                        $JAVA_HOME/jre/lib/ext directory.
+                                    </li>
+                                    <li class="read-para"><span>System/Application ClassLoader:</span> This is the child
+                                        classloader of Extension
+                                        classloader. It loads the class files from the classpath. By default, the
+                                        classpath is set to the current directory. You can change the classpath using
+                                        "-cp" or "-classpath" switch. It is also known as Application classloader.
+                                    </li>
+                                </ol>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">12. Is Empty .java file name a valid source file name?</h5>
+                                <p class="read-para">
+                                    Yes, Java allows to save our java file by .java only, we need to compile it by javac
+                                    .java and run by java classname Let's take a simple example:
+                                </p>
+                                <code>
+                                    //save by .java only  <br>
+                                        class A{  <br>
+                                        public static void main(String args[]){  <br>
+                                        System.out.println("Hello java");  <br>
+                                        }  <br>
+                                        }  <br>
+                                        //compile by javac .java  <br>
+                                        //run by     java A
+                                </code><br>
+                                <p class="read-para">compile it by <span> javac .java</span><br>
+
+                                    run it by <span> java A</span></p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">13. Is delete, next, main, exit or null keyword in java?</h5>
+                                <p class="read-para">
+                                    No.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">14. If I don't provide any arguments on the command line, then what
+                                    will the value stored in the String array passed into the main() method, empty or
+                                    NULL?
+                                </h5>
+                                <p class="read-para">
+                                    It is empty, but not null.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">15. What if I write static public void instead of public static
+                                    void?</h5>
+                                <p class="read-para">
+                                    The program compiles and runs correctly because the order of specifiers doesn't
+                                    matter in Java.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">16. What is the default value of the local variables?</h5>
+                                <p class="read-para">
+                                    The local variables are not initialized to any default value, neither primitives nor
+                                    object references.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">17. What are the various access specifiers in Java?
+                                </h5>
+                                <p class="read-para">
+                                    In Java, access specifiers are the keywords which are used to define the access
+                                    scope of the method, class, or a variable. In Java, there are four access specifiers
+                                    given below.
+                                </p>
+                                <ul>
+                                    <li class="read-para"><span>Public</span> The classes, methods, or variables which
+                                        are defined as public, can be
+                                        accessed by any class or method.
+                                    </li>
+                                    <li class="read-para"><span>Protected</span> Protected can be accessed by the class
+                                        of the same package, or by the
+                                        sub-class of this class, or within the same class.
+                                    </li>
+                                    <li class="read-para"><span>Default</span> Default are accessible within the package
+                                        only. By default, all the
+                                        classes, methods, and variables are of default scope.
+                                    </li>
+                                    <li class="read-para"><span>Private</span>The private class, methods, or variables
+                                        defined as private can be
+                                        accessed within the class only.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">18. What is the purpose of static methods and variables?</h5>
+                                <p class="read-para">
+                                    The methods or variables defined as static are shared among all the objects of the
+                                    class. The static is the part of the class and not of the object. The static
+                                    variables are stored in the class area, and we do not need to create the object to
+                                    access such variables. Therefore, static is used in the case, where we need to
+                                    define variables or methods which are common to all the objects of the class.
+                                    <br><br>
+
+                                    For example, In the class simulating the collection of the students in a college,
+                                    the name of the college is the common attribute to all the students. Therefore, the
+                                    college name will be defined as <span>static.</span>
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">19. What are the advantages of Packages in Java?
+                                </h5>
+                                <p class="read-para">
+                                    There are various advantages of defining packages in Java.
+                                    <br>
+                                <ul class="read-para">
+                                    <li class="read-para">Packages avoid the name clashes.
+                                    </li>
+                                    <li class="read-para">
+                                        The Package provides easier access control.
+                                    </li>
+                                    <li>We can also have the hidden classes that are not visible outside and used by the
+                                        package.
+                                    </li>
+                                    <li>
+                                        It is easier to locate the related classes.
+                                    </li>
+                                </ul>
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">20. What is the output of the following Java program?</h5>
+                                <code>
+                                    class Test   <br>
+{  <br>
+    public static void main (String args[])   <br>
+    {  <br>
+        System.out.println(10 + 20 + "interviewofgeeks"); <br>  
+        System.out.println("interviewofgeeks" + 10 + 20); <br> 
+    }  <br>
+} 
+                                </code>
+
+                                <p class="read-para">The output of the above code will be
+                                </p>
+                                <code>
+                                    30interviewofgeeks <br>
+interviewofgeeks1020
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">21. What is the output of the following Java program?</h5>
+                                <code>class Test   <br>
+                                    {  <br>
+                                        public static void main (String args[])   <br>
+                                        {  <br>
+                                            System.out.println(10 * 20 + "interviewofgeeks"); <br>  
+                                            System.out.println("interviewofgeeks" + 10 * 20); <br> 
+                                        }  <br>
+                                    }  </code>
+                                <p class="read-para">The output of the above code will be</p>
+                                <code>
+                                        200interviewofgeeks <br>
+interviewofgeeks200
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">22. What is the output of the following Java program?</h5>
+                                <code>
+                                    class Test   <br>
+{  <br>
+    public static void main (String args[])   <br>
+    {  <br>
+        for(int i=0; 0; i++)   <br>
+        {  <br>
+            System.out.println("Hello Javatpoint"); <br> 
+        }  <br>
+    }  <br>
+} 
+                                </code>
+                                <p class="read-para">The above code will give the compile-time error because the for
+                                    loop demands a boolean value in the second part and we are providing an integer
+                                    value, i.e., 0.
+                                </p>
+                                <hr>
+                            </li>
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
+                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
+                                    Core Java - OOP's Concepts: Initial OPP's Interview Questions
+                                </h5>
+                            </div><br>
+
+                            <li>
+                                <h5 class="question">23. What is object-oriented paradigm?</h5>
+                                <p class="read-para">It is a programming paradigm based on objects having data and
+                                    methods defined in the class to which it belongs. Object-oriented paradigm aims to
+                                    incorporate the advantages of modularity and reusability. Objects are the instances
+                                    of classes which interacts with one another to design applications and programs.
+                                    There are the following features of the object-oriented paradigm.</p>
+                                <ul class="read-para">
+                                    <li>Follows the bottom-up approach in program design.
+                                    </li>
+                                    <li> Focus on data with methods to operate upon the object's data
+                                    </li>
+                                    <li>Includes the concept like Encapsulation and abstraction which hides the
+                                        complexities from the user and show only functionality.
+                                    </li>
+                                    <li> Implements the real-time approach like inheritance, abstraction, etc.
+                                    </li>
+                                    <li>The examples of the object-oriented paradigm are C++, Simula, Smalltalk, Python,
+                                        C#, etc.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">24. What is an object?</h5>
+                                <p class="read-para">The Object is the real-time entity having some state and behavior.
+                                    In Java, Object is
+                                    an instance of the class having the instance variables as the state of the object
+                                    and the methods as the behavior of the object. The object of a class can be created
+                                    by using the new keyword.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">25. What is the difference between an object-oriented programming
+                                    language and object-based programming language?</h5>
+                                <p class="read-para">There are the following basic differences between the
+                                    object-oriented language and object-based language.
+                                </p>
+                                <ul class="read-para">
+                                    <li>Object-oriented languages follow all the concepts of OOPs whereas, the
+                                        object-based language doesn't follow all the concepts of OOPs like inheritance
+                                        and polymorphism.
+                                    </li>
+                                    <li>Object-oriented languages do not have the inbuilt objects whereas Object-based
+                                        languages have the inbuilt objects, for example, JavaScript has window object.
+                                    </li>
+                                    <li>Examples of object-oriented programming are Java, C#, Smalltalk, etc. whereas
+                                        the examples of object-based languages are JavaScript, VBScript, etc.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">26. What will be the initial value of an object reference which is
+                                    defined as an instance variable?</h5>
+                                <p class="read-para">All object references are initialized to null in Java.</p>
+                                </p> <br>
+                                <hr>
+                            </li>
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
+                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
+                                    Core Java - OOP's Concepts: Constructor Interview Questions
+                                </h5>
+                            </div><br>
+
+                            <li>
+                                <h5 class="question">27. What is the constructor?
+                                </h5>
+                                <p class="read-para">The constructor can be defined as the special type of method that
+                                    is used to initialize the state of an object. It is invoked when the class is
+                                    instantiated, and the memory is allocated for the object. Every time, an object is
+                                    created using the new keyword, the default constructor of the class is called. The
+                                    name of the constructor must be similar to the class name. The constructor must not
+                                    have an explicit return type.
+
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">28. How many types of constructors are used in Java?</h5>
+                                <p class="read-para">Based on the parameters passed in the constructors, there are two
+                                    types of constructors in Java.
+                                </p>
+                                <ul class="read-para">
+                                    <li>Default Constructor: default constructor is the one which does not accept any
+                                        value. The default constructor is mainly used to initialize the instance
+                                        variable with the default values. It can also be used for performing some useful
+                                        task on object creation. A default constructor is invoked implicitly by the
+                                        compiler if there is no constructor defined in the class.</li>
+                                    <li>Parameterized Constructor: The parameterized constructor is the one which can
+                                        initialize the instance variables with the given values. In other words, we can
+                                        say that the constructors which can accept the arguments are called
+                                        parameterized constructors.
+                                    </li>
+                                </ul>
+
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">29. What is the purpose of a default constructor?</h5>
+                                <p class="read-para">The purpose of the default constructor is to assign the default
+                                    value to the objects. The java compiler creates a default constructor implicitly if
+                                    there is no constructor in the class.
+                                </p>
+                                <code>
+                                    class Student3{  <br>
+                                        int id;  <br>
+                                        String name; <br> 
+                                          <br>
+                                        void display(){System.out.println(id+" "+name);}  <br>
+                                          <br>
+                                        public static void main(String args[]){  <br>
+                                        Student3 s1=new Student3();  <br>
+                                        Student3 s2=new Student3();  <br>
+                                        s1.display();  <br>
+                                        s2.display();  <br>
+                                        }  <br>
+                                        }
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>0 null <br>
+                                    0 null</code>
+                                <p class="read-para"><span>Explanation:</span> In the above class, you are not creating
+                                    any constructor, so compiler
+                                    provides you a default constructor. Here 0 and null values are provided by default
+                                    constructor.</p>
+                                <img src="imgs/default-constructor1.png" alt="">
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">30. Does constructor return any value?</h5>
+                                <p class="read-para">yes, The constructor implicitly returns the current instance of the
+                                    class (You can't
+                                    use an explicit return type with the constructor).</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">31. Is constructor inherited?</h5>
+                                <p class="read-para">No, The constructor is not inherited.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">32. Can you make a constructor final?</h5>
+                                <p class="read-para">No, the constructor can't be final.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">33. Can we overload the constructors?</h5>
+                                <p class="read-para">Yes, the constructors can be overloaded by changing the number of
+                                    arguments accepted by the constructor or by changing the data type of the
+                                    parameters. Consider the following example.
+                                </p>
+                                <code>
+                                    class Test  <br> 
+{  
+    int i;   <br>
+    public Test(int k) <br> 
+    {  <br>
+        i=k;  <br>
+    }  <br>
+    public Test(int k, int m) <br> 
+    {  <br>
+        System.out.println("Hi I am assigning the value max(k, m) to i");  <br>
+        if(k>m)  <br>
+        {  <br>
+            i=k; <br>  
+        }  <br>
+        else  <br> 
+        {  <br>
+            i=m;<br>  
+        }  <br>
+    }  <br>
+}  <br>
+public class Main   <br>
+{  <br>
+    public static void main (String args[])  <br> 
+    {  
+        Test test1 = new Test(10);  <br>
+        Test test2 = new Test(12, 15);<br>
+        System.out.println(test1.i);  <br>
+        System.out.println(test2.i);  <br>
+    }  <br>
+}  <br>
+                                </code>
+                                <p class="read-para">In the above program, The constructor Test is overloaded with
+                                    another constructor. In the first call to the constructor, The constructor with one
+                                    argument is called, and i will be initialized with the value 10. However, In the
+                                    second call to the constructor, The constructor with the 2 arguments is called, and
+                                    i will be initialized with the value 15.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">34. What do you understand by copy constructor in Java?</h5>
+                                <p class="read-para">There is no copy constructor in java. However, we can copy the
+                                    values from one object to another like copy constructor in C++. <br><br>
+
+                                    There are many ways to copy the values of one object into another in java. They are:
+                                </p>
+                                <ul class="read-para">
+                                    <li>By constructor
+                                    </li>
+                                    <li>
+                                        By assigning the values of one object into another
+                                    </li>
+                                    <li>By clone() method of Object class
+                                    </li>
+                                </ul>
+                                <p class="read-para">In this example, we are going to copy the values of one object into
+                                    another using java constructor.
+                                </p>
+                                <code>
+                                    //Java program to initialize the values from one object to another <br>  
+                                    class Student6{  <br>
+                                        int id;  <br>
+                                        String name; <br> 
+                                        //constructor to initialize integer and string <br>  
+                                        Student6(int i,String n){  <br>
+                                        id = i;  <br>
+                                        name = n;  <br>
+                                        }  <br>
+                                        //constructor to initialize another object  <br>
+                                        Student6(Student6 s){  <br>
+                                        id = s.id;  <br>
+                                        name =s.name;  <br>
+                                        }  <br>
+                                        void display(){System.out.println(id+" "+name);} <br><br>  
+                                       
+                                        public static void main(String args[]){  <br>
+                                        Student6 s1 = new Student6(111,"Karan");  <br>
+                                        Student6 s2 = new Student6(s1);  <br>
+                                        s1.display();  <br>
+                                        s2.display();  <br>
+                                       }  <br>
+                                    } <br>
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    111 Karan <br>
+111 Karan
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">35. What are the differences between the constructors and methods?
+                                </h5>
+                                <p class="read-para">There are many differences between constructors and methods. They
+                                    are given below.</p>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Java Constructor</th>
+                                            <th scope="col" style="width: 50%;">Java Method </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>A constructor is used to initialize the state of an object. </td>
+                                            <td>A method is used to expose the behavior of an object.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>A constructor must not have a return type. </td>
+                                            <td>A method must have a return type.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>The constructor is invoked implicitly. </td>
+                                            <td>The method is invoked explicitly.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>The Java compiler provides a default constructor if you don't have any
+                                                constructor in a class. </td>
+                                            <td>The method is not provided by the compiler in any case.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>The constructor name must be same as the class name. </td>
+                                            <td>The method name may or may not be same as class name.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <img src="imgs/constructor-vs-method-in-java.jpg" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">36. What is the output of the following Java program??</h5>
+                                <code>
+                                    public class Test   <br>
+{  <br>
+    Test(int a, int b)  <br>
+    {  <br>
+        System.out.println("a = "+a+" b = "+b);  <br>
+    }  <br>
+    Test(int a, float b)  <br>
+    {  <br>
+        System.out.println("a = "+a+" b = "+b); <br> 
+    }  <br>
+    public static void main (String args[])  <br>
+    {  <br>
+        byte a = 10;   <br>
+        byte b = 15;  <br>
+        Test test = new Test(a,b);  <br>
+    }  <br>
+}  
+                                </code>
+                                <p class="read-para" style="font-style: italic;">The output of the following program is:
+                                </p>
+                                <code>
+                                    a = 10 b = 15
+                                </code>
+
+                                <p class="read-para">
+                                    Here, the data type of the variables a and b, i.e., byte gets promoted to int, and
+                                    the first parameterized constructor with the two integer parameters is called.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">37. What is the output of the following Java program?</h5>
+                                <code>
+                                    class Test <br>  
+                                    {   <br>
+                                        int i;   <br> 
+                                    }   <br>
+                                    public class Main    <br>
+                                    {   <br>
+                                        public static void main (String args[])  <br>  
+                                        {   <br>
+                                            Test test = new Test();   <br> 
+                                            System.out.println(test.i);   <br>
+                                        }   <br>
+                                    }
+                                 </code>
+                                <p class="read-para">The output of the program is 0 because the variable i is
+                                    initialized to 0 internally.
+                                    As we know that a default constructor is invoked implicitly if there is no
+                                    constructor in the class, the variable i is initialized to 0 since there is no
+                                    constructor in the class.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">38. What is the output of the following Java program?</h5>
+                                <code>
+                                    class Test   <br>
+{  <br>
+    int test_a, test_b;  <br>
+    Test(int a, int b)   <br>
+    {  <br>
+    test_a = a;   <br>
+    test_b = b;   <br>
+    }  <br>
+    public static void main (String args[])   <br>
+    {  <br>
+        Test test = new Test();   <br>
+        System.out.println(test.test_a+" "+test.test_b); <br> 
+    }  <br>
+} 
+                                </code>
+                                <p class="read-para">There is a <span>compiler error </span>in the program because there
+                                    is a call to the default
+                                    constructor in the main method which is not present in the class. However, there is
+                                    only one parameterized constructor in the class Test. Therefore, no default
+                                    constructor is invoked by the constructor implicitly.</p>
+                                <hr>
+                            </li>
+
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javastaticquestions">
+                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
+                                    Core Java - OOP's Concepts: Static Keyword Questions
+                                </h5>
+                            </div><br>
+
+                            <li>
+                                <h5 class="question">39. What is the static variable?
+                                </h5>
+                                <p class="read-para">The static variable is used to refer to the common property of all
+                                    objects (that is not unique for each object), e.g., The company name of employees,
+                                    college name of students, etc. Static variable gets memory only once in the class
+                                    area at the time of class loading. Using a static variable makes your program more
+                                    memory efficient (it saves memory). Static variable belongs to the class rather than
+                                    the object.
+                                </p>
+                                <code>
+                                    //Program of static variable <br> 
+  
+class Student8{   <br>
+   int rollno;   <br>
+   String name;   <br>
+   static String college ="ITS";   <br>
+   <br>
+   Student8(int r,String n){   <br>
+   rollno = r;   <br>
+   name = n;   <br>
+   }   <br>
+ void display (){System.out.println(rollno+" "+name+" "+college);}   <br>
+ <br>
+ public static void main(String args[]){   <br>
+ Student8 s1 = new Student8(111,"Karan");   <br>
+ Student8 s2 = new Student8(222,"Aryan");   <br>
+ <br>
+ s1.display();   <br>
+ s2.display();   <br>
+ }   <br>
+}  <br>
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    111 Karan ITS <br>
+                                    222 Aryan ITS
+                                </code><br>
+                                <img src="imgs/staticvariable.jpg" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">40. What is the static method?
+                                </h5>
+                                <ul class="read-para">
+                                    <li>A static method belongs to the class rather than the object.
+                                    </li>
+                                    <li>There is no need to create the object to call the static methods.
+                                    </li>
+                                    <li>A static method can access and change the value of the static variable.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">41. What are the restrictions that are applied to the Java static
+                                    methods?</h5>
+                                <p class="read-para">Two main restrictions are applied to the static methods.
+                                </p>
+                                <ul class="read-para">
+                                    <li>The static method can not use non-static data member or call the non-static
+                                        method directly.
+                                    </li>
+                                    <li>
+                                        this and super cannot be used in static context as they are non-static.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">42. Why is the main method static?</h5>
+                                <p class="read-para">Because the object is not required to call the static method. If we make the main
+                                    method non-static, JVM will have to create its object first and then call main()
+                                    method which will lead to the extra memory allocation.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">43. Can we override the static methods?</h5>
+                                <p class="read-para">No, we can't override static methods.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">44. What is the static block?</h5>
+                                <p class="read-para">Static block is used to initialize the static data member. It is
+                                    executed before the main method, at the time of classloading.
+                                </p>
+                                <code>
+                                    class A2{ <br> 
+                                        static{System.out.println("static block is invoked");} <br>   
+                                        public static void main(String args[]){ <br> 
+                                         System.out.println("Hello main");  <br>
+                                        }  <br>
+                                      }  <br>
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>static block is invoked <br>
+                                    Hello main</code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">45. Can we execute a program without main() method?</h5>
+                                <p class="read-para">Ans) Yes, one of the ways to execute the program without the main
+                                    method is using
+                                    static block. </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">46. What if the static modifier is removed from the signature of
+                                    the main method?</h5>
+                                <p class="read-para">Program compiles. However, at runtime, It throws an error
+                                    "NoSuchMethodError."
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">47. What is the difference between static (class) method and
+                                    instance method?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">static or class method</th>
+                                            <th scope="col" style="width: 50%;">instance method </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1)A method that is declared as static is known as the static method.
+                                            </td>
+                                            <td>A method that is not declared as static is known as the instance method.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2)We don't need to create the objects to call the static methods. </td>
+                                            <td>The object is required to call the instance methods.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3)Non-static (instance) members cannot be accessed in the static context
+                                                (static method, static block, and static nested class) directly. </td>
+                                            <td>Static and non-static variables both can be accessed in instance
+                                                methods.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4)For example: public static int cube(int n){ return n*n*n;} </td>
+                                            <td>For example: public void msg(){...}.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">48. Can we make constructors static?</h5>
+                                <p class="read-para">
+                                    As we know that the static context (method, block, or variable) belongs to the
+                                    class, not the object. Since Constructors are invoked only when the object is
+                                    created, there is no sense to make the constructors static. However, if you try to
+                                    do so, the compiler will show the compiler error.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">49. Can we make the abstract methods static in Java?</h5>
+                                <p class="read-para">In Java, if we make the abstract methods static, It will become the
+                                    part of the class, and we can directly call it which is unnecessary. Calling an
+                                    undefined method is completely useless therefore it is not allowed.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">50. Can we declare the static variables and methods in an abstract
+                                    class?</h5>
+                                <p class="read-para">Yes, we can declare static variables and methods in an abstract
+                                    method. As we know that there is no requirement to make the object to access the
+                                    static context, therefore, we can access the static context declared inside the
+                                    abstract class by using the name of the abstract class. Consider the following
+                                    example.</p>
+                               <code>
+                                abstract class Test <br> 
+                                {  <br>
+                                    static int i = 102;  <br> 
+                                    static void TestMethod()  <br> 
+                                    {  <br> 
+                                        System.out.println("hi !! I am good !!");  <br> 
+                                    }  <br> 
+                                }  <br> 
+                                public class TestClass extends Test   <br> 
+                                {  <br> 
+                                    public static void main (String args[])  <br> 
+                                    {  <br>
+                                        Test.TestMethod();  <br> 
+                                        System.out.println("i = "+Test.i); <br>  
+                                    }  <br> 
+                                }<br> 
+                               </code>
+                               <p class="read-para" style="font-style: italic;">Output</p>
+                               <code>
+                                hi !! I am good !! <br>
+                                i = 102
+                               </code>
+                                <hr>
+                            </li>
+
+                        </ol>
+                        <div>
+                            <nav aria-label="...">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item active">
+                                        <a class="page-link" href="java-interview.html">1<span
+                                                class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link" href="java-interview-2.html">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="java-interview-3.html">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="java-interview-4.html">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="java-interview-5.html">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="java-interview-6.html">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><br>
+
+                        <p><span style="font-weight: bolder;">Last Updated: </span><span id="date"></span></p>
+                    </div><br>
+
+                    <!-- Trending Technology Cards -->
+                    <h5 style="font-weight: bolder;">Trending Technologies Interview Questions</h5>
+
+                    <!-- First Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="ai.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ai.jpg" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Artificial Intelegence (AI)</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="aws.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/aws.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">AWS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="selenium.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/selenium.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Selenium</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="react.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/react.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">React</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="cloud.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/cloud.png" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Cloud</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="hadoop.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/hadoop.svg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Hadoop</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="data-science.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/data-science.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Data Science</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="angular.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/angular.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Angular</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="block-chain.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/blockchain.png"
+                                        alt="Artificial intelegence Image" style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Blockchain</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="git.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/git.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Git</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="ml.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ml.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Machine Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="devops.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/devops.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">DevOps</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- ************************************This is Right Div ***************************************** -->
+                    <div>
+                        <div class="aside list">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="java-interview.html#javabasicquestions">Java Basic Interview Questions</a>
+                                </li>
+                                <li><a href="java-interview.html#javaoppsquestions">Java OOP's Interview Questions</a>
+                                </li>
+                                <li><a href="#">Java Multithreading Questions</a></li>
+                                <li><a href="java-interview.html#javastaticquestions">Java String & Exception
+                                        Questions</a></li>
+                                <li><a href="#">Java Collection Interview Questions</a></li>
+                                <li><a href="#">JDBC Interview Questions</a></li>
+                                <li><a href="#">Servlet Interview Questions</a></li>
+                                <li><a href="#">JSP Interview Questions</a></li>
+                                <li><a href="#">Spring Interview Questions</a></li>
+                                <li><a href="#">Hibernate Interview Questions</a></li>
+                                <li><a href="#">PL/SQL Interview Questions</a></li>
+                                <li><a href="#">SQL Interview Questions</a></li>
+                                <li><a href="#">Oracle Interview Questions</a></li>
+                                <li><a href="#">Andriod Interview Questions</a></li>
+                                <li><a href="#">SQL Server Interview Questions</a></li>
+                                <li><a href="#">MySQL Interview Questions</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!-- Footer -->
+        <div class="continer border-top">
+            <div class="row bg-white">
+                <div class="col">
+                    <div class="navbar-brand mb-0 h1">
+                        <img src="../img/iG.png" alt="">
+                    </div>
+                    <div>
+                        <span><img class="footer-icon" src="../img/mail_icon.svg" alt=""></span>
+                        <span class="footer-text"><a href="mailto:contact@interviewofgeeks.com"
+                                style="text-decoration: none; color: #308D46;">conact@interviewofgeeks.com</a></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Company</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="../contact-us.html">Contact Us</a></li>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../copyright-policy.html">Copyright Policy</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Learn</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="algorithm.html">Algorithms</a></li>
+                            <li><a href="data-structure.html">Data Structure</a></li>
+                            <li><a href="../tutorials/tutorials.html">Languages</a></li>
+                            <li><a href="java-interview.html">Java Interview</a></li>
+                            <li><a href="python-interview.html">Python Interview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Contribute</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../article.html">Write an Article</a></li>
+                            <li><a href="../your-experience.html">Write Interview Experience</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #308D46;"><span
+                style="margin: 15px 0 15px 25px; font-size: large; font-weight: bolder;color: white;">@InterviewofGeeks,
+                Some
+                rights reserved.</span> </div>
+
+        <!-- up Arrow -->
+        <a href="#top" class="up-arrow">
+            <img src="../img/up-arrow.svg" />
+        </a>
+
+        <!-- Primary Div Ends -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // executes when HTML-Document is loaded and DOM is ready
+            console.log("document is ready");
+
+
+            $(".card").hover(
+                function () {
+                    $(this).addClass('shadow-lg').css('cursor', 'pointer');
+                }, function () {
+                    $(this).removeClass('shadow-lg');
+                }
+            );
+
+            // document ready  
+        });
+    </script>
+    <script>
+        var date = new Date(2021, 1, 22);
+        document.getElementById("date").innerHTML = date;
+    </script>
+
+</body>
+
+</html>
