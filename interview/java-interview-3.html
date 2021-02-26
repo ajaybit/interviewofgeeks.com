@@ -103,8 +103,6 @@
                         questions, String Handling interview questions, Multithreading interview questions,
                         collection interview questions, JDBC interview questions, etc.</p>
                     <br>
-                    <div data-pym-src="https://www.jdoodle.com/embed/v0/31CD"></div>
-
                     <div>
                         <nav aria-label="...">
                             <ul class="pagination justify-content-center">
@@ -209,22 +207,8 @@
                                     variable of a superclass. The determination of the method to be called is based on
                                     the object being referred to by the reference variable.
                                 </p>
-                                <code>
-                                    class Bike{ <br> 
-                                        void run(){System.out.println("running");}  <br>
-                                      }  <br>
-                                      class Splendor extends Bike{  <br>
-                                        void run(){System.out.println("running safely with 60km");}  <br>
-                                        public static void main(String args[]){  <br>
-                                          Bike b = new Splendor();//upcasting  <br>
-                                          b.run();  <br>
-                                        }  <br>
-                                      } 
-                                </code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    running safely with 60km.
-                                </code>
+                                <iframe src="https://trinket.io/embed/java/ac890d739d" width="100%" height="356"
+                                    frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                                 <hr>
                             </li>
 
@@ -507,722 +491,741 @@ public class Main  <br>
                             </li>
 
                             <li>
-                                <h5 class="question">118. What are the differences between abstract class and interface?</h5>
-                                <table class="table">
-                                        <thead class="thead-dark read-para">
-                                            <tr>
-                                                <th scope="col" style="width: 50%;">Abstract class	</th>
-                                                <th scope="col" style="width: 50%;">Interface
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="read-para">
-                                            <tr>
-                                                <td>An abstract class can have a method body (non-abstract methods).	</td>
-                                                <td>The interface has only abstract methods.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>An abstract class can have instance variables.	</td>
-                                                <td>An interface cannot have instance variables.    
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>An abstract class can have the constructor.	
-                                                </td>
-                                                <td>The interface cannot have the constructor.    
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>An abstract class can have static methods.	
-                                                </td>
-                                                <td>The interface cannot have static methods.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>You can extend one abstract class.	
-                                                </td>
-                                                <td>You can implement multiple interfaces.
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>The abstract class can provide the implementation of the interface.		
-                                                </td>
-                                                <td>The Interface can't provide the implementation of the abstract class.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>The abstract keyword is used to declare an abstract class.			
-                                                </td>
-                                                <td>The interface keyword is used to declare an interface.
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>An abstract class can extend another Java class and implement multiple Java interfaces.				
-                                                </td>
-                                                <td>An interface can extend another Java interface only.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>A Java abstract class can have class members like private, protected, etc.				
-                                                </td>
-                                                <td>Members of a Java interface are public by default.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Example: <br>
-                                                    public abstract class Shape{ <br>
-                                                    public abstract void draw(); <br>
-                                                    }			
-                                                </td>
-                                                <td>Example: <br>
-                                                    public interface Drawable{ <br>
-                                                    void draw(); <br>
-                                                    }
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </ul>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">69. What is the output of the following Java program?
+                                <h5 class="question">118. What are the differences between abstract class and interface?
                                 </h5>
-                                <code>class Person  <br> 
-                                    {  <br>
-                                        public Person()  <br> 
-                                        {  <br>
-                                            System.out.println("Person class constructor called");  <br>
-                                        }  <br>
-                                    }  <br>
-                                    public class Employee extends Person   <br>
-                                    {  <br>
-                                        public Employee()   <br>
-                                        {  <br>
-                                            System.out.println("Employee class constructor called");  <br>
-                                        }  <br>
-                                        public static void main (String args[])  <br>
-                                        {  <br>
-                                            Employee e = new Employee();  <br>
-                                        }  <br>
-                                    }</code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>Person class constructor called <br>
-                                        Employee class constructor called</code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">70. Can you use this() and super() both in a constructor?</h5>
-                                <p class="read-para">No, because this() and super() must be the first statement in the
-                                    class constructor.
-                                </p>
-                                <code>
-                                    public class Test{  <br>
-                                        Test()  <br>
-                                         {  <br>
-                                             super();  <br> 
-                                             this();  <br>
-                                             System.out.println("Test class object is created");  <br>
-                                         }  <br>
-                                         public static void main(String []args){  <br>
-                                         Test t = new Test();  <br>
-                                         }  <br>
-                                    }  
-                                </code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>Test.java:5: error: call to this must be first statement in constructor
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">71. What is object cloning?</h5>
-                                <p class="read-para">The object cloning is used to create the exact copy of an object.
-                                    The clone() method
-                                    of the Object class is used to clone an object. The java.lang.Cloneable interface
-                                    must be implemented by the class whose object clone we want to create. If we don't
-                                    implement Cloneable interface, clone() method generates CloneNotSupportedException.
-                                </p>
-                                <code>
-                                    protected Object clone() throws CloneNotSupportedException 
-                                </code>
-                                <hr>
-                            </li>
-                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
-                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
-                                    Core Java - OOP's Concepts: Method Overloading Interview Questions
-                                </h5>
-                            </div><br>
-
-                            <li>
-                                <h5 class="question">72. What is method overloading?</h5>
-                                <p class="read-para">Method overloading is the polymorphism technique which allows us to
-                                    create multiple methods with the same name but different signature. We can achieve
-                                    method overloading in two ways.
-                                </p>
-                                <ul class="read-para">
-                                    <li>Changing the number of arguments
-                                    </li>
-                                    <li>Changing the return type
-                                    </li>
-                                </ul>
-                                <p class="read-para">Method overloading increases the readability of the program. Method
-                                    overloading is performed to figure out the program quickly.
-                                </p>
-                                <hr>
-                            </li>
-
-
-                            <li>
-                                <h5 class="question">73. Why is method overloading not possible by changing the return
-                                    type in java?</h5>
-                                <p class="read-para">In Java, method overloading is not possible by changing the return
-                                    type of the program due to avoid the ambiguity.
-                                </p>
-                                <code>
-                                    class Adder{   <br>
-                                        static int add(int a,int b){return a+b;}   <br>
-                                        static double add(int a,int b){return a+b;}   <br>
-                                        }   <br>
-                                        class TestOverloading3{   <br>
-                                        public static void main(String[] args){   <br>
-                                        System.out.println(Adder.add(11,11));//ambiguity  <br> 
-                                        }}
-                                </code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>Compile Time Error: method add(int, int) is already defined in class Adder
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">74. Can we overload the methods by making them static?</h5>
-                                <p class="read-para">No, We cannot overload the methods by just applying the static
-                                    keyword to them(number of parameters and types are the same). Consider the following
-                                    example.</p>
-                                <code>public class Animal  <br>
-                                        {  <br>
-                                            void consume(int a)  <br>
-                                            {  <br>
-                                                System.out.println(a+" consumed!!");  <br>
-                                            }  <br>
-                                            static void consume(int a)  <br>
-                                            {  <br>
-                                                System.out.println("consumed static "+a);  <br>
-                                            }  <br>
-                                            public static void main (String args[])  <br>
-                                            {  <br>
-                                                Animal a = new Animal();  <br>
-                                                a.consume(10);  <br>
-                                                Animal.consume(20);  <br>
-                                            }  <br>
-                                        }    </code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>Animal.java:7: error: method consume(int) is already defined in class Animal <br>
-                                            static void consume(int a) <br>
-                                                        ^ <br> <br>
-                                        Animal.java:15: error: non-static method consume(int) cannot be referenced from a static context <br>
-                                                Animal.consume(20); <br> 
-                                                      ^ <br> <br>
-                                        2 errors</code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">75. Can we overload the main() method?</h5>
-                                <p class="read-para">Yes, we can have any number of main methods in a Java program by
-                                    using method overloading.
-                                </p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">76. What is method overloading with type promotion?</h5>
-                                <p class="read-para">By Type promotion is method overloading, we mean that one data type
-                                    can be promoted to another implicitly if no exact matching is found
-                                    .
-                                </p> <br>
-                                <img src="imgs/java-type-promotion.png" alt="">
-                                <p class="read-para">As displayed in the above diagram, the byte can be promoted to
-                                    short, int, long, float or double. The short datatype can be promoted to int, long,
-                                    float or double. The char datatype can be promoted to int, long, float or double and
-                                    so on. Consider the following example.
-                                </p>
-                                <code>class OverloadingCalculation1{  <br>
-                                    void sum(int a,long b){System.out.println(a+b);}  <br>
-                                    void sum(int a,int b,int c){System.out.println(a+b+c);}  <br><br>
-                                    
-                                    public static void main(String args[]){  <br>
-                                    OverloadingCalculation1 obj=new OverloadingCalculation1(); <br> 
-                                    obj.sum(20,20);//now second int literal will be promoted to long  <br>
-                                    obj.sum(20,20,20);  <br>
-                                    }  <br>
-                                  }</code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>
-                                    40 <br>
-                                    60
-                                  </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">77. What is the output of the following Java program?
-                                </h5>
-                                <code>class OverloadingCalculation3{   <br> 
-                                    void sum(int a,long b){System.out.println("a method invoked");}     <br> 
-                                    void sum(long a,int b){System.out.println("b method invoked");}  <br>  <br>    
-                                      
-                                    public static void main(String args[]){     <br> 
-                                    OverloadingCalculation3 obj=new OverloadingCalculation3();   <br>   
-                                    obj.sum(20,20);//now ambiguity     <br> 
-                                    }     <br> 
-                                  }</code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>OverloadingCalculation3.java:7: error: reference to sum is  <br>
-                                    obj.sum(20,20);//now ambiguity   <br>
-                                         ^  <br>
-                                          both method sum(int,long) in OverloadingCalculation3  <br>
-                                          and method sum(long,int) in OverloadingCalculation3 match <br>
-                                    1 error</code>
-                                <hr>
-                            </li>
-                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
-                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
-                                    Core Java - OOP's Concepts: Method Overriding Interview Questions
-                                </h5>
-                            </div><br>
-
-                            <li>
-                                <h5 class="question">78. What is method overriding:</h5>
-                                <p class="read-para">If a subclass provides a specific implementation of a method that
-                                    is already provided by its parent class, it is known as Method Overriding. It is
-                                    used for runtime polymorphism and to implement the interface methods.
-                                </p>
-                                <ul class="read-para">
-                                    <li>The method must have the same name as in the parent class.</li>
-                                    <li>The method must have the same signature as in the parent class.
-                                    </li>
-                                    <li>Two classes must have an IS-A relationship between them.
-                                    </li>
-                                </ul>
-
-
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">79. Can we override the static method?</h5>
-                                <p class="read-para">No, you can't override the static method because they are the part
-                                    of the class, not the object.
-                                </p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">80. Why can we not override static method?</h5>
-                                <p class="read-para">It is because the static method is the part of the class, and it is
-                                    bound with class whereas instance method is bound with the object, and static gets
-                                    memory in class area, and instance gets memory in a heap.</p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">81. Can we override the overloaded method?</h5>
-                                <p class="read-para">Yes.</p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">82. Difference between method Overloading and Overriding.</h5>
                                 <table class="table">
                                     <thead class="thead-dark read-para">
                                         <tr>
-                                            <th scope="col" style="width: 50%;">Method Overloading </th>
-                                            <th scope="col" style="width: 50%;">Method Overriding
+                                            <th scope="col" style="width: 50%;">Abstract class </th>
+                                            <th scope="col" style="width: 50%;">Interface
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody class="read-para">
                                         <tr>
-                                            <td>1) Method overloading increases the readability of the program. </td>
-                                            <td>Method overriding provides the specific implementation of the method
-                                                that is already provided by its superclass.
+                                            <td>An abstract class can have a method body (non-abstract methods). </td>
+                                            <td>The interface has only abstract methods.
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>2) Method overloading occurs within the class. </td>
-                                            <td>Method overriding occurs in two classes that have IS-A relationship
-                                                between them.
+                                            <td>An abstract class can have instance variables. </td>
+                                            <td>An interface cannot have instance variables.
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>3) In this case, the parameters must be different. </td>
-                                            <td>In this case, the parameters must be the same.
+                                            <td>An abstract class can have the constructor.
+                                            </td>
+                                            <td>The interface cannot have the constructor.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>An abstract class can have static methods.
+                                            </td>
+                                            <td>The interface cannot have static methods.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>You can extend one abstract class.
+                                            </td>
+                                            <td>You can implement multiple interfaces.
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>The abstract class can provide the implementation of the interface.
+                                            </td>
+                                            <td>The Interface can't provide the implementation of the abstract class.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>The abstract keyword is used to declare an abstract class.
+                                            </td>
+                                            <td>The interface keyword is used to declare an interface.
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>An abstract class can extend another Java class and implement multiple
+                                                Java interfaces.
+                                            </td>
+                                            <td>An interface can extend another Java interface only.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>A Java abstract class can have class members like private, protected,
+                                                etc.
+                                            </td>
+                                            <td>Members of a Java interface are public by default.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Example: <br>
+                                                public abstract class Shape{ <br>
+                                                public abstract void draw(); <br>
+                                                }
+                                            </td>
+                                            <td>Example: <br>
+                                                public interface Drawable{ <br>
+                                                void draw(); <br>
+                                                }
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">83. Can we override the private methods?</h5>
-                                <p class="read-para">No, we cannot override the private methods because the scope of
-                                    private methods is limited to the class and we cannot access them outside of the
-                                    class.
-                                </p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">84. Can we change the scope of the overridden method in the
-                                    subclass?</h5>
-                                <p class="read-para">Yes, we can change the scope of the overridden method in the
-                                    subclass. However, we must notice that we cannot decrease the accessibility of the
-                                    method. The following point must be taken care of while changing the accessibility
-                                    of the method.
-                                </p>
-                                <ul class="read-para">
-                                    <li>The private can be changed to protected, public, or default.
-                                    </li>
-                                    <li>
-                                        The protected can be changed to public or default.
-                                    </li>
-                                    <li>The default can be changed to public.
-                                    </li>
-                                    <li>The public will always remain public.
-                                    </li>
                                 </ul>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">85.Can we modify the throws clause of the superclass method while
-                                    overriding it in the subclass?
+                                <h5 class="question">119. Can we define private and protected modifiers for the members
+                                    in interfaces?
                                 </h5>
-                                <p class="read-para">Yes, we can modify the throws clause of the superclass method while
-                                    overriding it in the subclass. However, there are some rules which are to be
-                                    followed while overriding in case of exception handling.</p>
-                                <ul class="read-para">
-                                    <li>If the superclass method does not declare an exception, subclass overridden
-                                        method cannot declare the checked exception, but it can declare the unchecked
-                                        exception.</li>
-                                    <li>If the superclass method declares an exception, subclass overridden method can
-                                        declare same, subclass exception or no exception but cannot declare parent
-                                        exception.</li>
-                                </ul>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">86. What is the output of the following Java program?</h5>
-                                <code>
-                                    class Base  <br>
-{  <br>
-    void method(int a)  <br>
-    {  <br>
-        System.out.println("Base class method called with integer a = "+a);  <br>
-    }  <br><br>
-       
-    void method(double d)  <br>
-    {  <br>
-        System.out.println("Base class method called with double d ="+d);  <br>
-    }  <br>
-}  <br><br>
-   
-class Derived extends Base  <br>
-{  <br>
-    @Override  <br>
-    void method(double d)  <br>
-    {  <br>
-        System.out.println("Derived class method called with double d ="+d);  <br>
-    }  <br>
-}  <br><br>
-   
-public class Main  <br>
-{      <br>
-    public static void main(String[] args)  <br>
-    {  <br>
-        new Derived().method(10);  <br>
-    }  <br>
-}  
-                                </code>
-                                <p class="read-para" style="font-style: italic;">The output of the following program is:
-                                </p>
-                                <code>
-                                    Base class method called with integer a = 10
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">87. Can you have virtual functions in Java?</h5>
-
-                                <p class="read-para">Yes, all functions in Java are virtual by default.
+                                <p class="read-para">No, they are implicitly public.
                                 </p>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">88. What is covariant return type?</h5>
-                                <p class="read-para">Now, since java5, it is possible to override any method by changing
-                                    the return type
-                                    if the return type of the subclass overriding method is subclass type. It is known
-                                    as covariant return type. The covariant return type specifies that the return type
-                                    may vary in the same direction as the subclass.</p>
-                                <code>
-                                    class A{  <br>
-                                        A get(){return this;}  <br>
-                                        }  <br>
-                                          <br>
-                                        class B1 extends A{  <br>
-                                        B1 get(){return this;}  <br>
-                                        void message(){System.out.println("welcome to covariant return type");}  <br>
-                                          
-                                        public static void main(String args[]){ <br> 
-                                        new B1().get().message();  <br>
-                                        }  <br>
-                                        }
-                                </code>
-                                <p class="read-para" style="font-style:italic;">Output</p>
-                                <code>Output: welcome to covariant return type
-                                </code>
+                                <h5 class="question">120. When can an object reference be cast to an interface
+                                    reference?</h5>
+                                <p class="read-para">An object reference can be cast to an interface reference when the
+                                    object implements the referenced interface.
+                                </p>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">89. What is the output of the following Java program?
-                                </h5>
+                                <h5 class="question">121. How to make a read-only class in Java?</h5>
+                                <p class="read-para">A class can be made read-only by making all of the fields private.
+                                    The read-only class will have only getter methods which return the private property
+                                    of the class to the main method. We cannot modify this property because there is no
+                                    setter method available in the class. Consider the following example.
+                                </p>
                                 <code>
-                                    class Base  <br> 
-{  <br>
-    public void baseMethod()  <br>
-    {  <br>
-        System.out.println("BaseMethod called ...");  <br>
-    }  <br>
-}  <br>
-class Derived extends Base   <br>
-{  <br>
-    public void baseMethod()  <br>
-    {  
-        System.out.println("Derived method called ...");  <br>
-    }  <br>
-}  <br>
-public class Test   <br>
-{  <br>
-    public static void main (String args[])  <br>
-    {  <br>
-        Base b = new Derived();  <br>
-        b.baseMethod();  <br>
-    }  <br>
+                                    //A Java class which has only getter methods.    <br>
+public class Student{    <br>
+//private data member    <br>
+private String college="AKG";    <br>
+//getter method for college  <br>  
+public String getCollege(){  <br>  
+return college;    <br>
+}    <br>
 } 
                                 </code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">122. How to make a write-only class in Java?</h5>
+                                <p class="read-para">A class can be made write-only by making all of the fields private.
+                                    The write-only class will have only setter methods which set the value passed from
+                                    the main method to the private fields. We cannot read the properties of the class
+                                    because there is no getter method in this class. Consider the following example.
+                                </p>
                                 <code>
-                                    Derived method called ...
+                                    //A Java class which has only setter methods.  <br>  
+public class Student{    <br>
+//private data member   <br> 
+private String college;  <br>  
+//getter method for college  <br>  
+public void setCollege(String college){    <br>
+this.college=college;    <br>
+}    <br>
+}    
                                 </code>
                                 <hr>
                             </li>
-                            <div style="width: 100%; height: 40px; background-color: green;" id="javastaticquestions">
+
+                            <li>
+                                <h5 class="question">123. What are the advantages of Encapsulation in Java?</h5>
+                                <p class="read-para">There are the following advantages of Encapsulation in Java?
+                                </p>
+                                <ul class="read-para">
+                                    <li>By providing only the setter or getter method, you can make the class read-only
+                                        or write-only. In other words, you can skip the getter or setter methods.</li>
+                                    <li>It provides you the control over the data. Suppose you want to set the value of
+                                        id which should be greater than 100 only, you can write the logic inside the
+                                        setter method. You can write the logic not to store the negative numbers in the
+                                        setter methods.</li>
+                                    <li>It is a way to achieve data hiding in Java because other class will not be able
+                                        to access the data through the private data members.</li>
+                                    <li>The encapsulate class is easy to test. So, it is better for unit testing.</li>
+                                    <li>The standard IDE's are providing the facility to generate the getters and
+                                        setters. So, it is easy and fast to create an encapsulated class in Java.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
                                 <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
-                                    Core Java - OOP's Concepts: Final keyword Interview Questions
+                                    Core Java - OOP's Concepts: Package Interview Questions
+                                </h5>
+                            </div><br>
+
+
+
+
+
+
+                            <li>
+                                <h5 class="question">124. What is the package?</h5>
+                                <p class="read-para">A package is a group of similar type of classes, interfaces, and
+                                    sub-packages. It provides access protection and removes naming collision. The
+                                    packages in Java can be categorized into two forms, inbuilt package, and
+                                    user-defined package. There are many built-in packages such as Java, lang, awt,
+                                    javax, swing, net, io, util, sql, etc. Consider the following example to create a
+                                    package in Java.</p>
+                                <code>
+                                    //save as Simple.java  <br>
+package mypack;  <br>
+public class Simple{  <br>
+ public static void main(String args[]){  <br>
+    System.out.println("Welcome to package");  <br>
+   }  <br>
+}  
+                                </code>
+                                <br>
+                                <img src="imgs/package.jpg" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">125. What are the advantages of defining packages in Java?</h5>
+                                <p class="read-para">By defining packages, we can avoid the name conflicts between the
+                                    same class names defined in different packages. Packages also enable the developer
+                                    to organize the similar classes more effectively. For example, one can clearly
+                                    understand that the classes present in java.io package are used to perform io
+                                    related operations.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">126. How to create packages in Java?</h5>
+                                <p class="read-para">If you are using the programming IDEs like Eclipse, NetBeans,
+                                    MyEclipse, etc. click on<span> file->new->project</span> and eclipse will ask you to
+                                    enter the
+                                    name of the package. It will create the project package containing various
+                                    directories such as src, etc. If you are using an editor like notepad for java
+                                    programming, use the following steps to create the package.
+                                </p>
+                                <ul class="read-para">
+                                    <li class="read-para">Define a package <span>package_name</span>. Create the class
+                                        with the name <span>class_name</span> and save this file with<span>
+                                            your_class_name</span>.java.</li> <br>
+                                    <li class="read-para">Now compile the file by running the following command on the
+                                        terminal. <br>
+                                        <code>javac -d . your_class_name.java</code> <br>The above command creates the
+                                        package with the name <span>package_name</span> in the present working
+                                        directory.
+                                    </li> <br>
+
+                                    <li>Now, run the class file by using the absolute class file name, like following.
+                                        <br> <code>java package_name.class_name </code>
+                                    </li> <br>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">127. How can we access some class in another class in Java?
+                                </h5>
+                                <p class="read-para">There are two ways to access a class in another class.</p>
+                                <ul>
+                                    <li class="read-para"><span>By using the fully qualified name:</span> To access a
+                                        class in a different package,
+                                        either we must use the fully qualified name of that class, or we must import the
+                                        package containing that class.</li><br>
+                                    <li class="read-para"><span>By using the relative path</span>, We can use the path
+                                        of the class that is related to
+                                        the package that contains our class. It can be the same or subpackage.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">128. Do I need to import java.lang package any time? Why?</h5>
+                                <p class="read-para">No. It is by default loaded internally by the JVM.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">129. Can I import same package/class twice? Will the JVM load the
+                                    package twice at runtime?</h5>
+                                <p class="read-para">One can import the same package or the same class multiple times.
+                                    Neither compiler nor JVM complains about it. However, the JVM will internally load
+                                    the class only once no matter how many times you import the same class.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">130. What is the static import?</h5>
+                                <p class="read-para">By static import, we can access the static members of a class
+                                    directly, and there is no to qualify it with the class name.</p>
+                                <hr>
+                            </li>
+
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
+                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
+                                    Java: Exception Handling Interview Questions
                                 </h5>
                             </div><br>
 
                             <li>
-                                <h5 class="question">90. What is the final variable?
+                                <h5 class="question">131. How many types of exception can occur in a Java program?</h5>
+                                <p class="read-para">There are mainly two types of exceptions: checked and unchecked.
+                                    Here, an error is considered as the unchecked exception. According to Oracle, there
+                                    are three types of exceptions:</p>
+                                <ul>
+                                    <li class="read-para"><span>Checked Exception:</span> Checked exceptions are the one
+                                        which are checked at
+                                        compile-time. For example, SQLException, ClassNotFoundException, etc.</li> <br>
+                                    <li class="read-para"><span>Unchecked Exception:</span> Unchecked exceptions are the
+                                        one which are handled at
+                                        runtime because they can not be checked at compile-time. For example,
+                                        ArithmaticException, NullPointerException, ArrayIndexOutOfBoundsException, etc.
+                                    </li> <br>
+                                    <li class="read-para"><span>Error:</span> Error cause the program to exit since they
+                                        are not recoverable. For
+                                        Example, OutOfMemoryError, AssertionError, etc.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">132. What is Exception Handling?</h5>
+                                <p class="read-para">Exception Handling is a mechanism that is used to handle runtime
+                                    errors. It is used primarily to handle checked exceptions. Exception handling
+                                    maintains the normal flow of the program. There are mainly two types of exceptions:
+                                    checked and unchecked. Here, the error is considered as the unchecked exception.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">133. Explain the hierarchy of Java Exception classes?</h5>
+                                <p class="read-para">The java.lang.Throwable class is the root class of Java Exception
+                                    hierarchy which is inherited by two subclasses: Exception and Error. A hierarchy of
+                                    Java Exception classes are given below:
+                                </p>
+                                <br>
+                                <img src="imgs/throwable.png" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">134. What is the difference between Checked Exception and Unchecked
+                                    Exception?</h5>
+                                <ul>
+                                    <li class="read-para"><span>Checked Exception</span> <br> The classes that extend
+                                        Throwable class except RuntimeException and Error are known as checked
+                                        exceptions, e.g., IOException, SQLException, etc. Checked exceptions are checked
+                                        at compile-time.</li>
+
+                                    <li class="read-para"><span>Unchecked Exception</span> <br> The classes that extend
+                                        RuntimeException are known as unchecked exceptions, e.g., ArithmeticException,
+                                        NullPointerException, etc. Unchecked exceptions are not checked at compile-time.
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">135.What is the base class for Error and Exception?
                                 </h5>
-                                <p class="read-para">In Java, the final variable is used to restrict the user from
-                                    updating it. If we initialize the final variable, we can't change its value. In
-                                    other words, we can say that the final variable once assigned to a value, can never
-                                    be changed after that. The final variable which is not assigned to any value can
-                                    only be assigned through the class constructor.</p>
-                                <img src="imgs/final.jpg" alt=""><br>
+                                <p class="read-para">The Throwable class is the base class for Error and Exception.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">136. Is it necessary that each try block must be followed by a
+                                    catch block?</h5>
+                                <p class="read-para">It is not necessary that each try block must be followed by a catch
+                                    block. It should be followed by either a catch block OR a finally block. So whatever
+                                    exceptions are likely to be thrown should be declared in the throws clause of the
+                                    method. Consider the following example.</p>
                                 <code>
-                                    class Bike9{  <br>
-                                        final int speedlimit=90;//final variable  <br>
-                                        void run(){  <br>
-                                         speedlimit=400;  <br>
+                                    public class Main{  <br>
+                                        public static void main(String []args){ <br> 
+                                           try{  <br>
+                                               int a = 1;   <br>
+                                               System.out.println(a/0);  <br>
+                                           }  <br>
+                                           finally  <br>
+                                           {  <br>
+                                               System.out.println("rest of the code...");  <br>
+                                           }  <br>
                                         }  <br>
-                                        public static void main(String args[]){  <br>
-                                        Bike9 obj=new  Bike9(); <br> 
-                                        obj.run();  <br>
+                                   }    
+                                </code>
+                                <p class="read-para" style="font-style: italic;">The output of the following program is:
+                                </p>
+                                <code>
+                                    Exception in thread main java.lang.ArithmeticException:/ by zero <br>
+rest of the code...
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">137. What is the output of the following Java program?</h5>
+
+                                <code>
+                                    public class ExceptionHandlingExample { <br> 
+                                        public static void main(String args[])  <br>
+                                        {  <br>
+                                            try  <br>
+                                            {  <br>
+                                                int a = 1/0;  <br>
+                                                System.out.println("a = "+a); <br> 
+                                            }  <br>
+                                            catch(Exception e){System.out.println(e);} <br> 
+                                            catch(ArithmeticException ex){System.out.println(ex);} <br>   
                                         }  <br>
-                                       }//end of class  
+                                        }  
                                 </code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    Compile Time Error
-                                </code>
-                                <hr>
-                            </li>
 
-                            <li>
-                                <h5 class="question">91. What is the final method?</h5>
-                                <p class="read-para">If we change any method to a final method, we can't override it.
-                                </p>
-                                <code>class Bike{  <br>
-                                    final void run(){System.out.println("running");}  <br>
-                                  }  <br>
-                                       <br>
-                                  class Honda extends Bike{  <br>
-                                     void run(){System.out.println("running safely with 100kmph");}  <br>
-                                       <br>
-                                     public static void main(String args[]){  <br>
-                                     Honda honda= new Honda();  <br>
-                                     honda.run();  <br>
-                                     }  <br>
-                                  }</code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    Compile Time Error
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">92. What is the final class?</h5>
-                                <p class="read-para">If we make any class final, we can't inherit it into any of the
-                                    subclasses.</p>
-                                <code>final class Bike{} <br> 
-  <br>
-                                    class Honda1 extends Bike{  <br>
-                                      void run(){System.out.println("running safely with 100kmph");}  <br>
-                                        <br>
-                                      public static void main(String args[]){ <br> 
-                                      Honda1 honda= new Honda1();  <br>
-                                      honda.run();  <br>
-                                      }  <br>
-                                    }</code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    Compile Time Error
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">93. What is the final blank variable?</h5>
-                                <p class="read-para">A final variable, not initialized at the time of declaration, is
-                                    known as the final blank variable. We can't initialize the final blank variable
-                                    directly. Instead, we have to initialize it by using the class constructor. It is
-                                    useful in the case when the user has some data which must not be changed by others,
-                                    for example, PAN Number. Consider the following example:
+                                <p class="read-para" style="font-style: italic;">Output
                                 </p>
                                 <code>
-                                    class Student{  <br>
-                                        int id;  <br>
-                                        String name;  <br>
-                                        final String PAN_CARD_NUMBER;  <br>
-                                        ...  <br>
-                                        } 
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">94. Can we initialize the final blank variable?</h5>
-                                <p class="read-para">Yes, if it is not static, we can initialize it in the constructor.
-                                    If it is static blank final variable, it can be initialized only in the static
-                                    block.
-                                </p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">95. Can you declare the main method as final?</h5>
-                                <p class="read-para">Yes, We can declare the main method as public static final void
-                                    main(String[] args){}.
-                                </p>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">96. What is the output of the following Java program?</h5>
-                                <code>
-                                    class Main {  <br>
-                                        public static void main(String args[]){  <br>
-                                          final int i;  <br>
-                                          i = 20;  <br>
-                                          System.out.println(i); <br> 
-                                        }  <br>
-                                       }
-                                </code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    20
-                                </code>
-                                <hr>
-                            </li>
-
-                            <li>
-                                <h5 class="question">97. What is the output of the following Java program?</h5>
-                                <code>
-                                    class Base   <br>
-{  <br>
-    protected final void getInfo()  <br>
-    {  <br>
-        System.out.println("method of Base class");  <br>
-    }  <br>
-}  <br>
-   <br>
-public class Derived extends Base  <br>
-{  <br>
-    protected final void getInfo()  <br>
-    {  
-        System.out.println("method of Derived class");  <br>
-    }  <br>
-    public static void main(String[] args)  <br>
-    {  <br>
-        Base obj = new Base();  <br>
-        obj.getInfo();  <br>
-    }  <br>
-}
-                                </code>
-                                <p class="read-para" style="font-style: italic;">Output</p>
-                                <code>
-                                    Derived.java:11: error: getInfo() in Derived cannot override getInfo() in Base <br>
-    protected final void getInfo()  <br>
-                         ^ <br>
-  overridden method is final <br>
+                                    ExceptionHandlingExample.java:10: error: exception ArithmeticException has already been caught <br>
+	catch(ArithmeticException ex){System.out.println(ex);}	<br>
+	^ <br>
 1 error
                                 </code>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">98. Can we declare a constructor as final?</h5>
-                                <p class="read-para">
-                                    The constructor can never be declared as final because it is never inherited.
-                                    Constructors are not ordinary methods; therefore, there is no sense to declare
-                                    constructors as final. However, if you try to do so, The compiler will throw an
-                                    error.
+                                <h5 class="question">138. What is finally block?</h5>
+                                <p class="read-para">The "finally" block is used to execute the important code of the
+                                    program. It is executed whether an exception is handled or not. In other words, we
+                                    can say that finally block is the block which is always executed. Finally block
+                                    follows try or catch block. If you don't handle the exception, before terminating
+                                    the program, JVM runs finally block, (if any). The finally block is mainly used to
+                                    place the cleanup code such as closing a file or closing a connection. Here, we must
+                                    know that for each try block there can be zero or more catch blocks, but only one
+                                    finally block. The finally block will not be executed if program exits(either by
+                                    calling System.exit() or by causing a fatal error that causes the process to abort).
+                                </p>
+                                <img src="imgs/finally.jpg" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">139. Can finally block be used without a catch?
+                                </h5>
+                                <p class="read-para">Yes, According to the definition of finally block, it must be
+                                    followed by a try or catch block, therefore, we can use try block instead of catch.
                                 </p>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">99. Can we declare an interface as final?</h5>
-                                <p class="read-para">No, we cannot declare an interface as final because the interface
-                                    must be implemented by some class to provide its definition. Therefore, there is no
-                                    sense to make an interface final. However, if you try to do so, the compiler will
-                                    show an error.
+                                <h5 class="question">140. Is there any case when finally will not be executed?
+                                </h5>
+                                <p class="read-para">Finally block will not be executed if program exits(either by
+                                    calling System.exit() or by causing a fatal error that causes the process to abort).
+                                </p>
+
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">141. What is the difference between throw and throws?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">throw keyword</th>
+                                            <th scope="col" style="width: 50%;">throws keyword
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) The throw keyword is used to throw an exception explicitly.</td>
+                                            <td>The throws keyword is used to declare an exception.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) The checked exceptions cannot be propagated with throw only.</td>
+                                            <td>The checked exception can be propagated with throws
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) The throw keyword is followed by an instance.</td>
+                                            <td>The throws keyword is followed by class.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) The throw keyword is used within the method.</td>
+                                            <td>The throws keyword is used with the method signature.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5) You cannot throw multiple exceptions.</td>
+                                            <td>You can declare multiple exceptions, e.g., public void method()throws
+                                                IOException, SQLException.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">142. What is the output of the following Java program?</h5>
+
+                                <code>public class Main{  <br>
+                                    public static void main(String []args){<br>  
+                                       try  <br>
+                                       {  <br>
+                                           throw 90; <br>  
+                                       }  <br>
+                                       catch(int e){  <br>
+                                           System.out.println("Caught the exception "+e);  <br>
+                                       }  <br>
+                                             
+                                   }  <br>
+                               }  </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    Main.java:6: error: incompatible types: int cannot be converted to Throwable <br>
+            throw 90; <br>
+            ^<br>
+Main.java:8: error: unexpected type<br>
+        catch(int e){<br>
+              ^<br>
+  required: class<br>
+  found:    int<br>
+2 errors
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">143. What is the output of the following Java program?</h5>
+
+                                <code>
+                                    class Calculation extends Exception  <br>
+{  <br>
+    public Calculation()   <br>
+    {  <br>
+        System.out.println("Calculation class is instantiated");  <br>
+    }  <br>
+    public void add(int a, int b)  <br>
+    {  <br>
+        System.out.println("The sum is "+(a+b));  <br>
+    }  <br>
+}  <br>
+public class Main{  <br>
+     public static void main(String []args){  <br>
+        try  <br>
+        {  <br>
+            throw new Calculation();   <br>
+        }  <br>
+        catch(Calculation c){  <br>
+            c.add(10,20);  <br>
+        }  <br>
+    }  <br>
+}
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    Calculation class is instantiated <br>
+The sum is 30
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">144. Can an exception be rethrown?</h5>
+                                <p class="read-para">Yes
                                 </p>
                                 <hr>
                             </li>
 
                             <li>
-                                <h5 class="question">100. What is the difference between the final method and abstract
-                                    method?</h5>
-                                <p class="read-para">The main difference between the final method and abstract method is
-                                    that the abstract method cannot be final as we need to override them in the subclass
-                                    to give its definition.</p>
+                                <h5 class="question">145. Can subclass overriding method declare an exception if parent
+                                    class method doesn't throw an exception?</h5>
+                                <p class="read-para">Yes but only unchecked exception not checked.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">146. What is exception propagation?</h5>
+                                <p class="read-para">An exception is first thrown from the top of the stack and if it is
+                                    not caught, it drops down the call stack to the previous method, If not caught
+                                    there, the exception again drops down to the previous method, and so on until they
+                                    are caught or until they reach the very bottom of the call stack. This procedure is
+                                    called exception propagation. By default, checked exceptions are not propagated.</p>
+                                <code>
+                                    class TestExceptionPropagation1{  <br>
+                                        void m(){  <br>
+                                          int data=50/0;  <br>
+                                        }  <br>
+                                        void n(){  <br>
+                                          m();  <br>
+                                        }  <br>
+                                        void p(){  <br>
+                                         try{  <br>
+                                          n();  <br>
+                                         }catch(Exception e){System.out.println("exception handled");}  <br>
+                                        }  <br>
+                                        public static void main(String args[]){  <br>
+                                         TestExceptionPropagation1 obj=new TestExceptionPropagation1();  <br>
+                                         obj.p();  <br>
+                                         System.out.println("normal flow...");  <br>
+                                        }  <br>
+                                      } 
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    exception handled <br>
+normal flow...
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">147. What is the output of the following Java program?</h5>
+                                <code>
+                                    public class Main   <br>
+{  <br>
+    void a()  <br>
+    {  <br>
+        try{  <br>
+        System.out.println("a(): Main called");  <br>
+        b();  <br>
+        }catch(Exception e)  <br>
+        {  <br>
+            System.out.println("Exception is caught");  <br>
+        }  <br>
+    }  <br>
+    void b() throws Exception  <br>
+    {  <br>
+     try{  <br>
+         System.out.println("b(): Main called");  <br>
+         c();  <br>
+     }catch(Exception e){  <br>
+         throw new Exception();  <br>
+     }  <br>
+     finally   <br>
+     {  <br>
+         System.out.println("finally block is called");  <br>
+     }  <br>
+    }  <br>
+    void c() throws Exception   <br>
+    {  <br>
+        throw new Exception();  <br>
+    }  <br>
+  <br>
+    public static void main (String args[])  <br>
+    {  <br>
+        Main m = new Main();  <br>
+        m.a();  <br>
+    }  <br>
+}  <br>
+}
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    a(): Main called  <br>
+b(): Main called <br>
+finally block is called <br>
+Exception is caught
+                                </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">148. What is the output of the following Java program?</h5>
+                                <code>
+                                    public class Calculation   <br> 
+{   <br>
+    int a;    <br>
+    public Calculation(int a)   <br>
+    {   <br>
+        this.a = a;   <br>
+    }   <br>
+    public int add()   <br>
+    {   <br>
+        a = a+10;    <br>
+        try    <br>
+        {   <br>
+            a = a+10;  <br>  
+            try    <br>
+            {   <br>
+                a = a*10;    <br>
+                throw new Exception();   <br> 
+            }catch(Exception e){   <br>
+                a = a - 10;   <br>
+            }   <br>
+        }catch(Exception e)  <br> 
+        {   <br>
+            a = a - 10;   <br> 
+        }   <br>
+        return a;   <br>
+    }   <br>
+       <br>
+    public static void main (String args[])   <br>
+    {   <br>
+        Calculation c = new Calculation(10);   <br>
+        int result = c.add();   <br>
+        System.out.println("result = "+result);   <br>
+    }   <br>
+}
+                                </code>
+
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    result = 290
+                                </code>
+                                <hr>
+                            </li>
+
+                            <div style="width: 100%; height: 40px; background-color: green;" id="javaoppsquestions">
+                                <h5 style="color: white; margin: auto; padding: auto; text-align: center;">
+                                    Java: Java: String Handling Interview Questions
+                                </h5>
+                            </div><br>
+
+                            <li>
+                                <h5 class="question">149. What is String Pool?</h5>
+                                <p class="read-para">String pool is the space reserved in the heap memory that can be
+                                    used to store the strings. The main advantage of using the String pool is whenever
+                                    we create a string literal; the JVM checks the "string constant pool" first. If the
+                                    string already exists in the pool, a reference to the pooled instance is returned.
+                                    If the string doesn't exist in the pool, a new string instance is created and placed
+                                    in the pool. Therefore, it saves the memory by avoiding the duplicacy.
+                                </p>
+                                <img src="imgs/string.jpg" alt="">
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">150. What is the meaning of immutable regarding String?</h5>
+                                <p class="read-para">The simple meaning of immutable is unmodifiable or unchangeable. In
+                                    Java, String is immutable, i.e., once string object has been created, its value
+                                    can't be changed. Consider the following example for better understanding.</p>
+                                <code>
+                                    class Testimmutablestring{  <br>
+                                        public static void main(String args[]){  <br>
+                                          String s="Sachin";  <br>
+                                          s.concat(" Tendulkar");//concat() method appends the string at the end  <br>
+                                          System.out.println(s);//will print Sachin because strings are immutable objects <br> 
+                                        }  <br>
+                                       } 
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    Sachin
+
+                                </code>
                                 <hr>
                             </li>
 
@@ -1524,7 +1527,7 @@ public class Derived extends Base  <br>
         });
     </script>
     <script>
-        var date = new Date(2021, 1, 23);
+        var date = new Date(2021, 1, 27);
         document.getElementById("date").innerHTML = date;
     </script>
     <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
