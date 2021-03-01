@@ -1,202 +1,204 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <url>
-<loc>https://interviewofgeeks.com/</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://interviewofgeeks.com/</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/index.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/index.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/data-structure.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/data-structure.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/algorithm.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/algorithm.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/company-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/company-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/technical-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/technical-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/web-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/web-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/database-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/database-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/python-interview.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/python-interview.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/ai.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/ai.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/aws.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/aws.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/selenium.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/selenium.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/react.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/react.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/cloud.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/cloud.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/hadoop.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/hadoop.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/data-science.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/data-science.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/angular.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/angular.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/block-chain.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/block-chain.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/git.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/git.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/ml.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/ml.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/devops.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/devops.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-script.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/java-script.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/swift.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/interview/swift.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/tutorials/tutorials.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/tutorials/tutorials.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/tutorials/java-tutorials.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/tutorials/java-tutorials.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/tutorials/swift-tutorial.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/tutorials/swift-tutorial.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/tutorials/python-tutorial.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/tutorials/python-tutorial.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/tutorials/java-script-tutorial.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/tutorials/java-script-tutorial.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/about-us.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/about-us.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/contact-us.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/contact-us.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/privacy-policy.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/privacy-policy.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/copyright-policy.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/copyright-policy.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/article.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/article.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/your-experience.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://interviewofgeeks.com/your-experience.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview-2.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview-2.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview-3.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview-3.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview-4.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview-4.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview-5.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview-5.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://interviewofgeeks.com/interview/java-interview-6.html</loc>
-<lastmod>2021-02-23T08:17:39+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://interviewofgeeks.com/interview/java-interview-6.html</loc>
+  <lastmod>2021-03-01T15:28:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+
+
 </urlset>
