@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java Collections Interview Questions -Interview of Geeks</title>
+
+    <!-- Css -->
+    <link rel="favicon icon" href="favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Meta Tags -->
+    <meta name="keywords"
+        content="interviewofgeeks, interview of geeks, interview preperation, interview questions, interview, java, core java,  serialization, deserialization, networking, socket, client, server, reflection, internationization, java bean, rmi, remote method invocation, core java data structure, collection, java collections">
+    <meta name="author" content="Ajay Kumar">
+    <meta name="description"
+        content="In Java, collection interview questions are most asked by the interviewers. Here is the list of the most asked collections interview questions with answers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-4645356742269640" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX3ZK4E5HC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZX3ZK4E5HC');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgb(250, 250, 250);
+            overflow-x: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- Header -->
+
+<body>
+
+    <div class="">
+        <nav class="navbar bg-white" id="siteloog">
+            <a href="../index.html"><span class="navbar-brand mb-0 h1"><img src="../img/iG.png" alt=""></span></a>
+        </nav>
+        <!-- Header Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-structure.html">Data Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithm.html">Algorithm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-interview.html">Company Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical-interview.html">Technical Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-interview.html">Web Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="java-interview.html">Java Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="database-interview.html">Data Base Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-interview.html">Python Interview</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main div -->
+        <div class="container  ">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-md-8 bg-white shadow-sm">
+                    <span>
+                        <h4 class="hm-welcome">Java Collections Interview Questions</h4>
+                    </span><span>34 Questions</span>
+
+                    <hr class="divider">
+                    <p class="read-para">In Java, collection interview questions are most asked by the interviewers.
+                        Here is the list of the most asked collections interview questions with answers.</p>
+                    <br>
+
+
+                    <div>
+                        <ol class="qa-list" id="javabasicquestions">
+                            <li>
+                                <h5 class="question">1. What is the Collection framework in Java?</h5>
+                                <p class="read-para">Collection Framework is a combination of classes and interface,
+                                    which is used to store and manipulate the data in the form of objects. It provides
+                                    various classes such as ArrayList, Vector, Stack, and HashSet, etc. and interfaces
+                                    such as List, Queue, Set, etc. for this purpose.</p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">2. What are the main differences between array and collection??
+                                </h5>
+                                <p class="read-para">Array and Collection are somewhat similar regarding storing the
+                                    references of objects and manipulating the data, but they differ in many ways. The
+                                    main differences between the array and Collection are defined below:</p>
+                                <ul class="read-para">
+                                    <li>Arrays are always of fixed size, i.e., a user can not increase or decrease the
+                                        length of the array according to their requirement or at runtime, but In
+                                        Collection, size can be changed dynamically as per need.</li>
+                                    <li>Arrays can only store homogeneous or similar type objects, but in Collection,
+                                        heterogeneous objects can be stored.</li>
+                                    <li>Arrays cannot provide the ?ready-made? methods for user requirements as sorting,
+                                        searching, etc. but Collection includes readymade methods to use.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">3. Explain various interfaces used in Collection framework?</h5>
+                                <p class="read-para">Collection framework implements various interfaces, Collection
+                                    interface and Map interface (java.util.Map) are the mainly used interfaces of Java
+                                    Collection Framework. List of interfaces of Collection Framework is given below:</p>
+
+                                <ol>
+                                    <li class="read-para"><span>Collection interface:</span> Collection
+                                        (java.util.Collection) is the
+                                        primary
+                                        interface, and every collection must implement this interface. <br><br>
+                                        <span>Syntax:</span> <br><br>
+                                        <code>
+                                            public interface Collection&#60;E&#62;extends Iterable
+                                        </code> <br>
+                                        Where &#60;E&#62; represents that this interface is of Generic type
+                                    </li>
+
+                                    <li class="read-para"><span>List interface:</span> List interface extends the
+                                        Collection interface, and it is an ordered collection of objects. It contains
+                                        duplicate elements. It also allows random access of elements. <br><br>
+                                        <span>Syntax:</span> <br><br>
+                                        <code>
+                                            public interface List&#60;E&#62; extends Collection&#60;E&#62;
+                                        </code>
+                                    </li>
+
+                                    <li class="read-para"><span>Set interface:</span> Set (java.util.Set) interface is a
+                                        collection which cannot contain duplicate elements. It can only include
+                                        inherited methods of Collection interface<br><br>
+                                        <span>Syntax:</span> <br><br>
+                                        <code>
+                                            public interface Set&#60;E&#62; extends Collection&#60;E&#62;
+                                        </code> <br> <br>
+                                        <span>Queue interface:</span> Queue (java.util.Queue) interface defines queue
+                                        data structure, which stores the elements in the form FIFO (first in first
+                                        out).<br><br>
+                                        <span>Syntax:</span> <br><br>
+                                        <code>
+                                            public interface Queue&#60;E&#62; extends Collection&#60;E&#62;  
+                                        </code> <br>
+                                    </li>
+
+                                    <li class="read-para"><span>Dequeue interface:</span> it is a double-ended-queue. It
+                                        allows the insertion and removal of elements from both ends. It implants the
+                                        properties of both Stack and queue so it can perform LIFO (Last in first out)
+                                        stack and FIFO (first in first out) queue, operations.<br><br>
+                                        <span>Syntax:</span> <br><br>
+                                        <code>
+                                            public interface Dequeue&#60;E&#62; extends Queue&#60;E&#62; 
+                                        </code>
+                                    </li>
+                                    <li class="read-para"><span>Map interface:</span> A Map (java.util.Map) represents a
+                                        key, value pair storage of elements. Map interface does not implement the
+                                        Collection interface. It can only contain a unique key but can have duplicate
+                                        elements. There are two interfaces which implement Map in java that are Map
+                                        interface and Sorted Map.
+                                    </li>
+
+
+                                </ol>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">4. What is the difference between ArrayList and Vector?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">ArrayList</th>
+                                            <th scope="col" style="width: 50%;">Vector</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) ArrayList is not synchronized.</td>
+                                            <td>Vector is synchronized.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) ArrayList is not a legacy class.</td>
+                                            <td>Vector is a legacy class.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) ArrayList increases its size by 50% of the array size.</td>
+                                            <td>Vector increases its size by doubling the array size.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) ArrayList is not ?thread-safe? as it is not synchronized.</td>
+                                            <td>Vector list is ?thread-safe? as it?s every method is synchronized.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">5. What is the difference between ArrayList and LinkedList?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">ArrayList</th>
+                                            <th scope="col" style="width: 50%;">LinkedList</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) ArrayList uses a dynamic array.</td>
+                                            <td>LinkedList uses a doubly linked list.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) ArrayList is not efficient for manipulation because too much is
+                                                required.</td>
+                                            <td>LinkedList is efficient for manipulation.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) ArrayList is better to store and fetch data.</td>
+                                            <td>LinkedList is better to manipulate data.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) ArrayList provides random access.</td>
+                                            <td>LinkedList does not provide random access.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5) ArrayList takes less memory overhead as it stores only object</td>
+                                            <td>LinkedList takes more memory overhead, as it stores the object as well
+                                                as the address of that object.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">6. What is the difference between Iterator and ListIterator?</h5>
+                                <p class="read-para">Iterator traverses the elements in the forward direction only
+                                    whereas ListIterator traverses the elements into forward and backward direction.</p>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Iterator</th>
+                                            <th scope="col" style="width: 50%;">ListIterator</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) The Iterator traverses the elements in the forward direction only.
+                                            </td>
+                                            <td>ListIterator traverses the elements in backward and forward directions
+                                                both.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) The Iterator can be used in List, Set, and Queue.</td>
+                                            <td>ListIterator can be used in List only.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) The Iterator can only perform remove operation while traversing the
+                                                collection.</td>
+                                            <td>ListIterator can perform ?add,? ?remove,? and ?set? operation while
+                                                traversing the collection.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">7. What is the difference between Iterator and Enumeration?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Iterator</th>
+                                            <th scope="col" style="width: 50%;">Enumeration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) The Iterator can traverse legacy and non-legacy elements.</td>
+                                            <td>Enumeration can traverse only legacy elements.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) The Iterator is fail-fast.</td>
+                                            <td>Enumeration is not fail-fast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) The Iterator is slower than Enumeration.</td>
+                                            <td>Enumeration is faster than Iterator.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) The Iterator can perform remove operation while traversing the
+                                                collection.</td>
+                                            <td>The Enumeration can perform only traverse operation on the collection.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">8. What is the difference between List and Set?</h5>
+                                <p class="read-para">The List and Set both extend the collection interface. However,
+                                    there are some differences between the both which are listed below.</p>
+                                <ul class="read-para">
+                                    <li>The List can contain duplicate elements whereas Set includes unique items.</li>
+                                    <li>The List is an ordered collection which maintains the insertion order whereas
+                                        Set is an unordered collection which does not preserve the insertion order.</li>
+                                    <li>The List interface contains a single legacy class which is Vector class whereas
+                                        Set interface does not have any legacy class.</li>
+                                    <li>The List interface can allow n number of null values whereas Set interface only
+                                        allows a single null value.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">9. What is the difference between HashSet and TreeSet?</h5>
+                                <p class="read-para">The HashSet and TreeSet, both classes, implement Set interface. The
+                                    differences between the both are listed below.</p>
+                                <ul class="read-para">
+                                    <li>HashSet maintains no order whereas TreeSet maintains ascending order.</li>
+                                    <li>HashSet impended by hash table whereas TreeSet implemented by a Tree structure.
+                                    </li>
+                                    <li>HashSet performs faster than TreeSet.</li>
+                                    <li>HashSet is backed by HashMap whereas TreeSet is backed by TreeMap.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">10. What is the difference between Set and Map?</h5>
+                                <p class="read-para">The differences between the Set and Map are given below.</p>
+                                <ul class="read-para">
+                                    <li>Set contains values only whereas Map contains key and values both.</li>
+                                    <li>Set contains unique values whereas Map can contain unique Keys with duplicate
+                                        values.</li>
+                                    <li>Set holds a single number of null value whereas Map can include a single null
+                                        key with n number of null values.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">11. What is the difference between HashSet and HashMap?</h5>
+                                <p class="read-para">The differences between the HashSet and HashMap are listed below.
+                                </p>
+                                <ul class="read-para">
+                                    <li>HashSet contains only values whereas HashMap includes the entry (key, value).
+                                        HashSet can be iterated, but HashMap needs to convert into Set to be iterated.
+                                    </li>
+                                    <li>HashSet implements Set interface whereas HashMap implements the Map interface
+                                    </li>
+                                    <li>HashSet cannot have any duplicate value whereas HashMap can contain duplicate
+                                        values with unique keys.</li>
+                                    <li>HashSet contains the only single number of null value whereas HashMap can hold a
+                                        single null key with n number of null values.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">12. What is the difference between HashMap and TreeMap?</h5>
+                                <p class="read-para">The differences between the HashMap and TreeMap are given below.
+                                </p>
+                                <ul class="read-para">
+                                    <li>HashMap maintains no order, but TreeMap maintains ascending order.</li>
+                                    <li>HashMap is implemented by hash table whereas TreeMap is implemented by a Tree
+                                        structure.</li>
+                                    <li>HashMap can be sorted by Key or value whereas TreeMap can be sorted by Key.</li>
+                                    <li>HashMap may contain a null key with multiple null values whereas TreeMap cannot
+                                        hold a null key but can have multiple null values.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">13. What is the difference between HashMap and Hashtable?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">HashMap</th>
+                                            <th scope="col" style="width: 50%;">Hashtable</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) HashMap is not synchronized.</td>
+                                            <td>Hashtable is synchronized.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) HashMap can contain one null key and multiple null values.</td>
+                                            <td>Hashtable cannot contain any null key or null value.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) HashMap is not ?thread-safe,? so it is useful for non-threaded
+                                                applications.</td>
+                                            <td>Hashtable is thread-safe, and it can be shared between various threads.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) HashMap inherits the AbstractMap class</td>
+                                            <td>Hashtable inherits the Dictionary class.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">14. What is the difference between Collection and Collections?</h5>
+                                <p class="read-para">The differences between the Collection and Collections are given
+                                    below.</p>
+                                <ul class="read-para">
+                                    <li class="read-para">The Collection is an interface whereas Collections is a class.
+                                    </li>
+                                    <li class="read-para">The Collection interface provides the standard functionality
+                                        of data structure to List, Set, and Queue. However, Collections class is to sort
+                                        and synchronize the collection elements.</li>
+                                    <li class="read-para">The Collection interface provides the methods that can be used
+                                        for data structure whereas Collections class provides the static methods which
+                                        can be used for various operation on a collection.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">15. What is the difference between Comparable and Comparator?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Comparable</th>
+                                            <th scope="col" style="width: 50%;">Comparator</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) Comparable provides only one sort of sequence.</td>
+                                            <td>The Comparator provides multiple sorts of sequences.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) It provides one method named compareTo().</td>
+                                            <td>It provides one method named compare().</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) It is found in java.lang package.</td>
+                                            <td>It is located in java.util package.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) If we implement the Comparable interface, The actual class is
+                                                modified.</td>
+                                            <td>The actual class is not changed.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">16. What do you understand by BlockingQueue?</h5>
+                                <p class="read-para">BlockingQueue is an interface which extends the Queue interface. It
+                                    provides concurrency in the operations like retrieval, insertion, deletion. While
+                                    retrieval of any element, it waits for the queue to be non-empty. While storing the
+                                    elements, it waits for the available space. BlockingQueue cannot contain null
+                                    elements, and implementation of BlockingQueue is thread-safe.
+                                    <br><br><span>Syntax:</span>
+                                </p>
+                                <code>public interface BlockingQueue&#60;E&#62; extends Queue &#60;E&#62; </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">17. What is the advantage of Properties file?</h5>
+                                <p class="read-para">If you change the value in the properties file, you don't need to
+                                    recompile the java class. So, it makes the application easy to manage. It is used to
+                                    store information which is to be changed frequently. Consider the following example.
+                                </p>
+                                <code>
+                                    import java.util.*;   <br>
+import java.io.*;   <br>
+public class Test {   <br>
+public static void main(String[] args)throws Exception{   <br>
+    FileReader reader=new FileReader("db.properties");   <br>
+       <br>
+    Properties p=new Properties();   <br>
+    p.load(reader);   <br>
+       <br>
+    System.out.println(p.getProperty("user"));   <br>
+    System.out.println(p.getProperty("password"));   <br>
+}   <br>
+}  
+                                </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    system <br>
+                                    oracle
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">18. What does the hashCode() method?</h5>
+                                <p class="read-para">The hashCode() method returns a hash code value (an integer
+                                    number). <br><br>
+
+                                    The hashCode() method returns the same integer number if two keys (by calling
+                                    equals() method) are identical. <br><br>
+
+                                    However, it is possible that two hash code numbers can have different or the same
+                                    keys. <br><br>
+
+                                    If two objects do not produce an equal result by using the equals() method, then the
+                                    hashcode() method will provide the different integer result for both the objects.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">19. Why we override equals() method?</h5>
+                                <p class="read-para">The equals method is used to check whether two objects are the same
+                                    or not. It needs to be overridden if we want to check the objects based on the
+                                    property. <br><br>
+
+                                    For example, Employee is a class that has 3 data members: id, name, and salary.
+                                    However, we want to check the equality of employee object by the salary. Then, we
+                                    need to override the equals() method.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">20. How to synchronize List, Set and Map elements?</h5>
+                                <p class="read-para">Yes, Collections class provides methods to make List, Set or Map
+                                    elements as synchronized:</p>
+                                <ul class="read-para">
+                                    <li><code>public static List synchronizedList(List l){}</code></li>
+                                    <li><code>public static Set synchronizedSet(Set s){}</code></li>
+                                    <li><code>public static SortedSet synchronizedSortedSet(SortedSet s){}</code></li>
+                                    <li><code>public static Map synchronizedMap(Map m){}</code></li>
+                                    <li><code>public static SortedMap synchronizedSortedMap(SortedMap m){}</code></li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">21. What is the advantage of the generic collection?</h5>
+                                <p class="read-para">There are three main advantages of using the generic collection.
+                                </p>
+                                <ul class="read-para">
+                                    <li>If we use the generic class, we don't need typecasting.</li>
+                                    <li>It is type-safe and checked at compile time.</li>
+                                    <li>Generic confirms the stability of the code by making it bug detectable at
+                                        compile time.</li>
+                                </ul>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">22. What is hash-collision in Hashtable and how it is handled in
+                                    Java?</h5>
+                                <p class="read-para">Two different keys with the same hash value are known as
+                                    hash-collision. Two separate entries will be kept in a single hash bucket to avoid
+                                    the collision. There are two ways to avoid hash-collision.</p>
+                                <ul class="read-para">
+                                    <li>Separate Chaining</li>
+                                    <li>Open Addressing</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">23. What is the Dictionary class?</h5>
+                                <p class="read-para">The Dictionary class provides the capability to store key-value
+                                    pairs.</p>
+                                <hr>
+                            </li>
+                            <li>
+                                <h5 class="question">24. What is the default size of load factor in hashing based
+                                    collection?</h5>
+                                <p class="read-para">The default size of load factor is <strong>0.75 </strong>. The
+                                    default capacity is
+                                    computed as initial capacity * load factor. For example, 16 * 0.75 = 12. So, 12 is
+                                    the default capacity of Map.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">25. What do you understand by fail-fast?</h5>
+                                <p class="read-para">The Iterator in java which immediately throws
+                                    ConcurrentmodificationException, if any structural modification occurs in, is called
+                                    as a Fail-fast iterator. Fail-fats iterator does not require any extra space in
+                                    memory.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">26. What is the difference between Array and ArrayList?</h5>
+                                <p class="read-para">The main differences between the Array and ArrayList are given
+                                    below.</p>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Array</th>
+                                            <th scope="col" style="width: 50%;">ArrayList</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) The Array is of fixed size, means we cannot resize the array as per
+                                                need.</td>
+                                            <td>ArrayList is not of the fixed size we can change the size dynamically.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) Arrays are of the static type.</td>
+                                            <td>ArrayList is of dynamic size.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) Arrays can store primitive data types as well as objects.</td>
+                                            <td>ArrayList cannot store the primitive data types it can only store the
+                                                objects.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">27. What is the difference between the length of an Array and size
+                                    of ArrayList?</h5>
+                                <p class="read-para">The length of an array can be obtained using the property of length
+                                    whereas ArrayList does not support length property, but we can use size() method to
+                                    get the number of objects in the list. <br><br>
+                                    <span>Finding the length of the array</span>
+                                </p>
+                                <code>
+                                    Int [] array = new int[4];   <br>
+                                    System.out.println("The size of the array is " + array.length); 
+                                    </code>
+
+                                <p class="read-para"> <span>Finding the size of the ArrayList
+
+                                    </span></p>
+                                <code>
+                                        ArrayList&#60;String&#62; list=new ArrayList&#60;String&#62;();     <br>
+                                            list.add("ankit");    <br>
+                                            list.add("nippun");  <br>
+                                            System.out.println(list.size()); 
+                                        </code>
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">28. How to convert ArrayList to Array and Array to ArrayList?</h5>
+                                <p class="read-para">We can convert an Array to ArrayList by using the asList() method
+                                    of Arrays class.
+                                    asList() method is the static method of Arrays class and accepts the List object.
+                                    Consider the following syntax:</p>
+                                <code>
+                                    Arrays.asList(item)  
+                                </code>
+                                <p class="read-para">We can convert an ArrayList to Array using toArray() method of the
+                                    ArrayList class.
+                                    Consider the following syntax to convert the ArrayList to the List object.</p>
+                                <code>
+                                        List_object.toArray(new String[List_object.size()])  
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">29. How to make Java ArrayList Read-Only?</h5>
+                                <p class="read-para">We can obtain java ArrayList Read-only by calling the
+                                    Collections.unmodifiableCollection() method. When we define an ArrayList as
+                                    Read-only then we cannot perform any modification in the collection through add(),
+                                    remove() or set() method.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">30. How to remove duplicates from ArrayList?</h5>
+                                <p class="read-para">There are two ways to remove duplicates from the ArrayList.</p>
+                                <ul class="read-para">
+                                    <li><strong>Using HashSet: </strong>By using HashSet we can remove the duplicate
+                                        element from the ArrayList, but it will not then preserve the insertion order.
+                                    </li>
+                                    <li><strong>Using LinkedHashSet: </strong>We can also maintain the insertion order
+                                        by using LinkedHashSet instead of HashSet.</li>
+                                </ul>
+                                <p class="read-para">The Process to remove duplicate elements from ArrayList using the
+                                    LinkedHashSet:</p>
+                                <ul class="read-para">
+                                    <li>Copy all the elements of ArrayList to LinkedHashSet.</li>
+                                    <li>Empty the ArrayList using clear() method, which will remove all the elements
+                                        from the list.</li>
+                                    <li>Now copy all the elements of LinkedHashset to ArrayList.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">31. How to reverse ArrayList?</h5>
+                                <p class="read-para">To reverse an ArrayList, we can use reverse() method of Collections
+                                    class. Consider the following example.</p>
+                                <code>
+                                        import java.util.ArrayList;  <br> 
+import java.util.Collection;   <br>
+import java.util.Collections;   <br>
+import java.util.Iterator;   <br>
+import java.util.List;   <br>
+public class ReverseArrayList {   <br>
+public static void main(String[] args) {   <br>
+     List list = new ArrayList&#60;&#62;();   <br>
+     list.add(10);   <br>
+     list.add(50);   <br>
+     list.add(30);   <br>
+     Iterator i = list.iterator();   <br>
+     System.out.println("printing the list....");   <br>
+     while(i.hasNext())   <br>
+     {   <br>
+         System.out.println(i.next());   <br>
+     }   <br>
+     Iterator i2 = list.iterator();   <br>
+     Collections.reverse(list);   <br>
+     System.out.println("printing list in reverse order....");   <br>
+     while(i2.hasNext())   <br>
+     {   <br>
+         System.out.println(i2.next());   <br>
+     }   <br>
+    }   <br>
+}  
+                                    </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    printing the list....  <br>
+                                    10 <br>
+                                    50 <br>
+                                    30 <br>
+                                    printing list in reverse order.... <br>
+                                    30 <br>
+                                    50 <br>
+                                    10
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">32. How to sort ArrayList in descending order?</h5>
+                                <p class="read-para">To sort the ArrayList in descending order, we can use the
+                                    reverseOrder method of Collections class. Consider the following example.</p>
+                                <code>
+                                        import java.util.ArrayList;   <br>
+import java.util.Collection;   <br>
+import java.util.Collections;   <br>
+import java.util.Comparator;   <br>
+import java.util.Iterator;   <br>
+import java.util.List;   <br>
+   <br>
+public class ReverseArrayList {   <br>
+public static void main(String[] args) {   <br>
+     List list = new ArrayList&#60;&#62;();   <br>
+     list.add(10);   <br>
+     list.add(50);   <br>
+     list.add(30);   <br>
+     list.add(60);   <br>
+     list.add(20);   <br>
+     list.add(90);   <br>
+        <br>
+     Iterator i = list.iterator();   <br>
+     System.out.println("printing the list....");   <br>
+     while(i.hasNext())   <br>
+     {   <br>
+         System.out.println(i.next());   <br>
+     }   <br>
+       <br>
+    Comparator cmp = Collections.reverseOrder();   <br>
+    Collections.sort(list,cmp);   <br>
+     System.out.println("printing list in descending order....");   <br>
+     Iterator i2 = list.iterator();   <br>
+     while(i2.hasNext())   <br>
+     {   <br>
+         System.out.println(i2.next());   <br>
+     }   <br>
+        <br>
+}   <br>
+}
+                                    </code>
+                                <p class="read-para" style="font-style: italic;">Output</p>
+                                <code>
+                                    printing the list.... <br>
+10 <br>
+50 <br>
+30 <br>
+60 <br>
+20 <br>
+90 <br>
+printing list in descending order.... <br>
+90 <br>
+60 <br>
+50 <br>
+30 <br>
+20 <br>
+10
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">33. How to synchronize ArrayList?</h5>
+                                <p class="read-para">We can synchronize ArrayList in two ways.
+                                </p>
+                                <ul class="read-para">
+                                    <li>Using Collections.synchronizedList() method</li>
+                                    <li>Using CopyOnWriteArrayList&#60;T&#62;</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">34. When to use ArrayList and LinkedList?</h5>
+                                <p class="read-para">LinkedLists are better to use for the update operations whereas
+                                    ArrayLists are better to use for the search operations.</p>
+                                <hr>
+                            </li>
+
+                            
+
+                        </ol>
+                        <br>
+
+                        <p><span style="font-weight: bolder;">Last Updated: </span><span id="date"></span></p>
+                    </div><br>
+
+                    <!-- Trending Technology Cards -->
+                    <h5 style="font-weight: bolder;">Trending Technologies Interview Questions</h5>
+
+                    <!-- First Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="ai.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ai.jpg" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Artificial Intelegence (AI)</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="aws.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/aws.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">AWS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="selenium.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/selenium.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Selenium</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="react.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/react.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">React</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="cloud.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/cloud.png" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Cloud</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="hadoop.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/hadoop.svg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Hadoop</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="data-science.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/data-science.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Data Science</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="angular.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/angular.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Angular</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="block-chain.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/blockchain.png"
+                                        alt="Artificial intelegence Image" style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Blockchain</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="git.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/git.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Git</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="ml.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ml.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Machine Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="devops.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/devops.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">DevOps</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- ************************************This is Right Div ***************************************** -->
+                    <div>
+                        <div class="aside list">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="java-interview.html#javabasicquestions">Java Basic Interview Questions</a>
+                                </li>
+                                <li><a href="java-interview-2.html#javainheritancequestions">Java Inheritance
+                                        Questions</a></li>
+                                <li><a href="java-interview.html#javaoppsquestions">Java OOP's Interview Questions</a>
+                                </li>
+                                <li><a href="#">Java Multithreading Questions</a></li>
+                                <li><a href="java-interview.html#javastaticquestions">Java String & Exception
+                                        Questions</a></li>
+                                <li><a href="#">Java Collection Interview Questions</a></li>
+                                <li><a href="#">JDBC Interview Questions</a></li>
+                                <li><a href="#">Servlet Interview Questions</a></li>
+                                <li><a href="#">JSP Interview Questions</a></li>
+                                <li><a href="#">Spring Interview Questions</a></li>
+                                <li><a href="#">Hibernate Interview Questions</a></li>
+                                <li><a href="#">PL/SQL Interview Questions</a></li>
+                                <li><a href="#">SQL Interview Questions</a></li>
+                                <li><a href="#">Oracle Interview Questions</a></li>
+                                <li><a href="#">Andriod Interview Questions</a></li>
+                                <li><a href="#">SQL Server Interview Questions</a></li>
+                                <li><a href="#">MySQL Interview Questions</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!-- Footer -->
+        <div class="continer border-top">
+            <div class="row bg-white">
+                <div class="col">
+                    <div class="navbar-brand mb-0 h1">
+                        <img src="../img/iG.png" alt="">
+                    </div>
+                    <div>
+                        <span><img class="footer-icon" src="../img/mail_icon.svg" alt=""></span>
+                        <span class="footer-text"><a href="mailto:contact@interviewofgeeks.com"
+                                style="text-decoration: none; color: #308D46;">conact@interviewofgeeks.com</a></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Company</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="../contact-us.html">Contact Us</a></li>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../copyright-policy.html">Copyright Policy</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Learn</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="algorithm.html">Algorithms</a></li>
+                            <li><a href="data-structure.html">Data Structure</a></li>
+                            <li><a href="../tutorials/tutorials.html">Languages</a></li>
+                            <li><a href="java-interview.html">Java Interview</a></li>
+                            <li><a href="python-interview.html">Python Interview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Contribute</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../article.html">Write an Article</a></li>
+                            <li><a href="../your-experience.html">Write Interview Experience</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #308D46;"><span
+                style="margin: 15px 0 15px 25px; font-size: large; font-weight: bolder;color: white;">@InterviewofGeeks,
+                Some
+                rights reserved.</span> </div>
+
+        <!-- up Arrow -->
+        <a href="#top" class="up-arrow">
+            <img src="../img/up-arrow.svg" />
+        </a>
+
+        <!-- Primary Div Ends -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // executes when HTML-Document is loaded and DOM is ready
+            console.log("document is ready");
+
+
+            $(".card").hover(
+                function () {
+                    $(this).addClass('shadow-lg').css('cursor', 'pointer');
+                }, function () {
+                    $(this).removeClass('shadow-lg');
+                }
+            );
+
+            // document ready  
+        });
+    </script>
+    <script>
+        var date = new Date(2021, 2, 1);
+        document.getElementById("date").innerHTML = date;
+    </script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+
+</body>
+
+</html>

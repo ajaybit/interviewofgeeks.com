@@ -243,4 +243,10 @@ div.more a:hover:after {
 content:"\2192";
 right: -5px;
 opacity: 1;
-}    
+}
+
+.contact-us-icons{
+    width: 18px;
+    height: 17px;
+    margin: 5px;
+}
