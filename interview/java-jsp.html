@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSP Interview Questions -Interview of Geeks</title>
+
+    <!-- Css -->
+    <link rel="favicon icon" href="favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Meta Tags -->
+    <meta name="keywords"
+        content="interviewofgeeks, interview of geeks, interview preperation, interview questions, interview, java, core java,JSP,  jsp, jsp api, java jsp,  serialization, deserialization, networking, socket, client, server, reflection, internationization, java bean, rmi, remote method invocation, core java data structure, collection, java collections">
+    <meta name="author" content="Ajay Kumar">
+    <meta name="description"
+        content="There is a list of top 40 frequently asked JSP interview questions and answers for freshers and professionals. If you know any JSP interview question that has not been included here, post your question in the Ask Question section.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-4645356742269640" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX3ZK4E5HC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZX3ZK4E5HC');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgb(250, 250, 250);
+            overflow-x: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- Header -->
+
+<body>
+
+    <div class="">
+        <nav class="navbar bg-white" id="siteloog">
+            <a href="../index.html"><span class="navbar-brand mb-0 h1"><img src="../img/iG.png" alt=""></span></a>
+        </nav>
+        <!-- Header Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-structure.html">Data Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithm.html">Algorithm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-interview.html">Company Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical-interview.html">Technical Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-interview.html">Web Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="java-interview.html">Java Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="database-interview.html">Data Base Interview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-interview.html">Python Interview</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main div -->
+        <div class="container  ">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-md-8 bg-white shadow-sm">
+                    <span>
+                        <h4 class="hm-welcome">JSP Interview Questions</h4>
+                    </span><span>40 Questions</span>
+
+                    <hr class="divider">
+                    <p class="read-para">There is a list of top 40 frequently asked JSP interview questions and answers
+                        for freshers and professionals. If you know any JSP interview question that has not been
+                        included here, post your question in the Ask Question section.</p>
+                    <br>
+
+
+                    <div>
+                        <ol class="qa-list" id="javabasicquestions">
+                            <li>
+                                <h5 class="question">1. What is JSP?</h5>
+                                <p class="read-para">Java Server Pages technology (JSP) is a server-side programming
+                                    language used to create a dynamic web page in the form of HyperText Markup Language
+                                    (HTML). It is an extension to the servlet technology.
+                                    <br><br>
+                                    A JSP page is internally converted into the servlet. JSP has access to the entire
+                                    family of the Java API including JDBC API to access enterprise database. Hence, Java
+                                    language syntax has been used in the java server pages (JSP). The JSP pages are more
+                                    accessible to maintain than Servlet because we can separate designing and
+                                    development. It provides some additional features such as Expression Language,
+                                    Custom Tags, etc.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">2. What are the life-cycle methods for a JSP?</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Method</th>
+                                            <th scope="col" style="width: 50%;">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>public void jspInit()</td>
+                                            <td>It is invoked only once, same as init method of the servlet.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>public void _jspService(ServletRequest request,ServletResponse)throws
+                                                ServletException,IOException</td>
+                                            <td>It is invoked at each request, same as service() method of the servlet.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>public void jspDestroy()</td>
+                                            <td> It is invoked only once, same as destroy() method of the servlet.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">3. List out some advantages of using JSP.</h5>
+                                <ul class="read-para">
+                                    <li>Better performance.</li>
+                                    <li>The compilation of JSP is done before it is processed by the server which
+                                        eradicates the need for loading of interpreter and code script each time.</li>
+                                    <li>JSP has access to all-powerful enterprises.</li>
+                                    <li>Easy to maintain: JSP can be easily managed because we can easily separate our
+                                        business logic with presentation logic. In Servlet technology, we mix our
+                                        business logic with the presentation logic.</li>
+                                    <li>JSP can also be used in combination with servlets.</li>
+                                </ul>
+
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">4. Give the syntax for JSP comments.</h5>
+                                <p class="read-para">The syntax for JSP comments is:</p>
+                                <code>&#60;%-- Comment --%&#62;  </code>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">5. What is the difference between hide comment and output comment?
+                                </h5>
+                                <p class="read-para">The JSP comment is called hide comment whereas HTML comment is
+                                    called output comment. If a user views the source of the page, the JSP comment will
+                                    not be shown whereas HTML comment will be displayed</p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">6. What are the JSP implicit objects?</h5>
+                                <p class="read-para">JSP provides nine implicit objects by default. They are as follows:
+                                </p>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">Object</th>
+                                            <th scope="col" style="width: 50%;">Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) out</td>
+                                            <td>JspWriter</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) request</td>
+                                            <td>HttpServletRequest</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) response</td>
+                                            <td>HttpServletResponse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4) config</td>
+                                            <td>ServletConfig</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5) session</td>
+                                            <td>HttpSession</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6) application</td>
+                                            <td>ServletContext</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7) pageContext</td>
+                                            <td>PageContext</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8) page</td>
+                                            <td>Object</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9) exception</td>
+                                            <td>Throwable</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">7. What is the difference between include directive and include
+                                    action?
+                                </h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 50%;">include directive</th>
+                                            <th scope="col" style="width: 50%;">include action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>1) The include directive includes the content at page translation time.
+                                            </td>
+                                            <td>The include action includes the content at request time.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2) The include directive includes the original content of the page, so
+                                                page size increases at runtime</td>
+                                            <td>The include action doesn't include the original content rather invokes
+                                                the include() method of Vendor provided class.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3) It's better for static pages.</td>
+                                            <td>It's better for dynamic pages.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </li>
+
+                            <li>
+                                <h5 class="question">8. Is JSP technology extensible?</h5>
+                                <p class="read-para">Yes. JSP technology is extensible through the development of custom
+                                    actions, or tags, which are encapsulated in tag libraries.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">9. How can I implement a thread-safe JSP page? What are the
+                                    advantages and Disadvantages of using it?</h5>
+                                <p class="read-para">You can make your JSPs thread-safe by having them implement the
+                                    SingleThreadModel interface. This is done by adding the directive &#60;%@ page
+                                    isThreadSafe="false" %&#62; within your JSP page.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">10. How can I prevent the output of my JSP or Servlet pages from
+                                    being cached by the browser? <br>
+                                    (OR) <br> How to disable caching on the back button of the browser?</h5>
+                                <code>
+                                        &#60;%   <br>
+response.setHeader("Cache-Control","no-store");    <br>
+response.setHeader("Pragma","no-cache");    <br>
+response.setHeader ("Expires", "0"); //prevents caching at the proxy server   <br>
+%&#62; 
+                                    </code>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">11. How can we handle the exceptions in JSP?</h5>
+                                <p class="read-para">There are two ways to perform exception handling, one is by the
+                                    errorPage element of page directive, and second is by the error-page element of the
+                                    web.xml file.</p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">12. What are the two ways to include the result of another page. ?
+                                </h5>
+                                <p class="read-para">There are two ways to include the result of another page:</p>
+                                <ul class="read-para">
+                                    <li>By include directive</li>
+                                    <li>By include action</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">13. How can we forward the request from JSP page to the servlet?
+                                </h5>
+                                <p class="read-para">Yes of course! With the help of "forward action" tag, but we need
+                                    to give the URL-pattern of the servlet.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">14. Can we use the exception implicit object in any JSP page?</h5>
+                                <p class="read-para">No. The exception implicit object can only be used in the error
+                                    page which defines it with the isErrorPage attribute of page directive.
+                                </p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">15. How is JSP used in the MVC model?</h5>
+                                <p class="read-para">JSP is usually used for presentation in the MVC pattern (Model View
+                                    Controller ), i.e., it plays the role of the view. The controller deals with calling
+                                    the model and the business classes which in turn get the data, and this data is then
+                                    presented to the JSP for rendering on to the client.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">16. What are context initialization parameters?</h5>
+                                <p class="read-para">Context initialization parameters are specified by the
+                                    &#60;context-param&#62; in the web.xml file, and these are initialization parameter
+                                    for the
+                                    whole application and not specific to any servlet or JSP.
+                                </p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">17. What are the different scope values for the
+                                    &#60;jsp:useBean&#62; tag?</h5>
+                                <p class="read-para">There are 4 values:
+                                </p>
+                                <ol class="read-para">
+                                    <li>page</li>
+                                    <li>request</li>
+                                    <li>session</li>
+                                    <li>application</li>
+                                </ol>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">18. What do JSP literals consist of?</h5>
+                                <ul class="read-para">
+                                    <li>Boolean</li>
+                                    <li>Integer</li>
+                                    <li>Floating point</li>
+                                    <li>String</li>
+                                    <li>Null</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">19. What is the purpose of &#60;jsp:useBean&#62;?</h5>
+                                <p class="read-para">The jsp:useBean action searches for the existence of the object
+                                    with specified name. If not found, it creates one.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">20. What is the purpose of &#60;jsp:setProperty &#62;?</h5>
+                                <p class="read-para">This action sets the properties of a bean.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">21. What is the purpose of &#60;jsp:getProperty &#62;?</h5>
+                                <p class="read-para">
+                                    This action retrieves the properties of a bean.
+                                </p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">22. List out the various scope values of JSP action.</h5>
+                                <p class="read-para">The possible scope values are:</p>
+                                <ul class="read-para">
+                                    <li>page</li>
+                                    <li>request</li>
+                                    <li>session</li>
+                                    <li>application</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">23. What is the use of 'out' implicit object?</h5>
+                                <p class="read-para">The object is used to give a response to contents.</p>
+                                <hr>
+                            </li>
+                            <li>
+                                <h5 class="question">24. Give the use of session object.</h5>
+                                <p class="read-para">The object is used between the client requests for the tracking of
+                                    client sessions.
+                                </p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">25. Give the use of exception object.</h5>
+                                <p class="read-para">The object is used for the generation of a response to the errors
+                                    thrown</p>
+
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">26. What is the difference between ServletContext and PageContext?
+                                </h5>
+                                <p class="read-para">ServletContext gives the information about the container whereas
+                                    PageContext gives the information about the Request..</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">27. What is the difference in using request.getRequestDispatcher()
+                                    and context.getRequestDispatcher()?</h5>
+                                <p class="read-para">request.getRequestDispatcher(path) is used to create it we need to
+                                    give the relative path of the resource whereas context.getRequestDispatcher(path)to
+                                    create it we need to give the absolute path of the resource.</p>
+                                <hr>
+                            </li>
+
+
+                            <li>
+                                <h5 class="question">28. What is EL in JSP?</h5>
+                                <p class="read-para">The Expression Language(EL) is used in JSP to simplify the
+                                    accessibility of objects. It provides many objects that can be used directly like
+                                    param, requestScope, sessionScope, applicationScope, request, session, etc.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">29. What are the primary differences between the JSP custom tags
+                                    and java beans?</h5>
+                                <ul class="read-para">
+                                    <li>Custom tags can manipulate JSP content whereas beans cannot.</li>
+                                    <li>Complex operations can be reduced to a significantly simpler form with custom
+                                        tags than with beans.</li>
+                                    <li>Custom tags require quite a bit more work to set up than do beans.</li>
+                                    <li>Custom tags are available only in JSP 1.1 and later, but beans can be used in
+                                        all JSP 1.x versions.</li>
+                                </ul>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h5 class="question">30. Can an interface be implemented in the JSP file?</h5>
+                                <p class="read-para">No.</p>
+                            </li>
+
+                            <li>
+                                <h5 class="question">31. What is JSTL?</h5>
+                                <p class="read-para">JSP Standard Tag Library is a library of predefined tags that ease
+                                    the development of JSP.</p>
+                            </li>
+
+                            <li>
+                                <h5 class="question">32. How many tags are provided in JSTL?</h5>
+                                <p class="read-para">There is 5 type of JSTL tags.</p>
+                                <ol class="read-para">
+                                    <li>core tags</li>
+                                    <li>sql tags</li>
+                                    <li>xml tags</li>
+                                    <li>internationalization tags</li>
+                                    <li>functions tags</li>
+                                </ol>
+                            </li>
+
+                            <li>
+                                <h5 class="question">33. Which directive is used in JSP custom tag?</h5>
+                                <p class="read-para">The JSP taglib directive.</p>
+
+                            </li>
+
+                            <li>
+                                <h5 class="question">34. What are the three tags used in JSP bean development?</h5>
+                                <ol class="read-para">
+                                    <li>jsp:useBean</li>
+                                    <li>jsp:setProperty</li>
+                                    <li>jsp:getProperty</li>
+                                </ol>
+
+                            </li>
+
+                            <li>
+                                <h5 class="question">35. How to disable session in JSP?</h5>
+                                <p class="read-para">&#60;%@ page session="false" %&#62; </p>
+                            </li>
+
+                            <li>
+                                <h5 class="question">36. List the various action tags used in JSP.</h5>
+                                <p class="read-para">Following are the list of various action tags used in JSP:</p>
+                                <ul class="read-para">
+                                    <li>jsp:forward: This action tag forwards the request and response to another
+                                        resource.</li>
+                                    <li>jsp:include: This action tag is used to include another resource.</li>
+                                    <li>jsp:useBean: This action tag is used to create and locates bean object.</li>
+                                    <li>jsp:setProperty: This action tag is used to set the value of the property of the
+                                        bean.</li>
+                                    <li>jsp:getProperty: This action tag is used to print the value of the property of
+                                        the bean.</li>
+                                    <li>jsp:plugin: This action tag is used to embed another component such as the
+                                        applet.</li>
+                                    <li>jsp:param: This action tag is used to set the parameter value. It is used in
+                                        forward and includes mostly.</li>
+                                    <li>jsp:fallback: This action tag can be used to print the message if the plugin is
+                                        working.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h5 class="question">37. Explain the steps for creating custom tags in JSP??</h5>
+                                <p class="read-para">For creating any custom tag, we need to follow the following steps:
+                                </p>
+                                <ol class="read-para">
+                                    <li class="read-para"><span>Create the Tag handler class</span> <br>To generate the
+                                        Tag Handler, we are inheriting the TagSupport class and overriding its method
+                                        doStartTag().To write data for the JSP, we need to use the JspWriter class.
+                                        <br>The PageContext class provides getOut() method that returns the instance of
+                                        JspWriter class. TagSupport class provides an instance of pageContext by default
+                                    </li>
+                                    <li class="read-para"><span>Create the TLD file</span><br>Tag Library Descriptor
+                                        (TLD) file contains information of tag and Tag Hander classes. It must hold
+                                        inside the WEB-INF directory.
+                                    </li>
+                                    <li><span>Create the JSP file</span><br>Let's use the tag in our JSP file. Here, we
+                                        are specifying the path of tld file directly. However, it is recommended to use
+                                        the URI name instead of full a path of tld file. We will learn about URI later.
+                                        It uses taglib directive to use the tags defined in the tld file.
+                                    </li>
+                                </ol>
+                            </li>
+
+                            <li>
+                                <h5 class="question">38. How can the applets be displayed in the JSP? Explain with an
+                                    example.</h5>
+                                <p class="read-para">The jsp:plugin action tag is used to embed an applet in the JSP
+                                    file. The jsp:plugin action tag downloads plugin at client side to execute an applet
+                                    or bean.
+                                    <br><br>
+                                    Example of displaying applet in JSP
+                                </p>
+                                <code>
+                                        &#60;html>  <br>  
+                                        &#60;head>     <br>
+                                        &#60;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   <br>  
+                                        &#60;title>Mouse Drag&#60;/title>     <br>
+                                        &#60;/head>     <br>
+                                        &#60;body bgcolor="khaki">    <br> 
+                                        &#60;h1>Mouse Drag Example&#60;/h1>   <br>  
+     <br>
+                                        &#60;jsp:plugin align="middle" height="500" width="500"     <br>
+     type="applet"  code="MouseDrag.class" name="clock" codebase="."/>     <br>
+     <br>
+     &#60;/body>     <br>
+     &#60;/html> 
+                                    </code>
+                            </li>
+
+                            <li>
+                                <h5 class="question">39. What is Expression language in JSP?</h5>
+                                <p class="read-para">The Expression Language (EL) simplifies the accessibility of data
+                                    stored in the Java Bean component, and other objects like request, session,
+                                    application.
+                                    <br><br>
+                                    There are many implicit objects, operators and reserve words in EL.
+                                    <br><br>
+                                    It is the newly added feature in JSP technology version 2.0.</p>
+                            </li>
+
+                            <li>
+                                <h5 class="question">40. Explain various implicit objects in expression language.</h5>
+                                <table class="table">
+                                    <thead class="thead-dark read-para">
+                                        <tr>
+                                            <th scope="col" style="width: 25%;">Implicit Objects</th>
+                                            <th scope="col" style="width: 50%;">Usage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="read-para">
+                                        <tr>
+                                            <td>pageScope</td>
+                                            <td>it maps the given attribute name with the value set in the page scope</td>
+                                        </tr>
+                                        <tr>
+                                            <td>requestScope</td>
+                                            <td>it maps the given attribute name with the value set in the request scope
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>sessionScope</td>
+                                            <td>it maps the given attribute name with the value set in the session scope</td>
+                                        </tr>
+                                        <tr>
+                                            <td>applicationScope</td>
+                                            <td>it maps the given attribute name with the value set in the application scope</td>
+                                        </tr>
+                                        <tr>
+                                            <td>param</td>
+                                            <td>it maps the request parameter to the single value</td>
+                                        </tr>
+                                        <tr>
+                                            <td>paramValues</td>
+                                            <td>it maps the request parameter to an array of values</td>
+                                        </tr>
+                                        <tr>
+                                            <td>header</td>
+                                            <td>it maps the request header name to the single value</td>
+                                        </tr>
+                                        <tr>
+                                            <td>headerValues</td>
+                                            <td>it maps the request header name to an array of values</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cookie</td>
+                                            <td>it maps the given cookie name to the cookie value</td>
+                                        </tr>
+                                        <tr>
+                                            <td>initParam</td>
+                                            <td>it maps the initialization parameter</td>
+                                        </tr>
+                                        <tr>
+                                            <td>pageContext</td>
+                                            <td>it provides access to many objects request, session, etc.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+
+                        </ol>
+                        <br>
+
+                        <p><span style="font-weight: bolder;">Last Updated: </span><span id="date"></span></p>
+                    </div><br>
+
+                    <!-- Trending Technology Cards -->
+                    <h5 style="font-weight: bolder;">Trending Technologies Interview Questions</h5>
+
+                    <!-- First Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="ai.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ai.jpg" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Artificial Intelegence (AI)</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="aws.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/aws.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">AWS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="selenium.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/selenium.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Selenium</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="react.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/react.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">React</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="cloud.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/cloud.png" alt="Artificial intelegence Image"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Cloud</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="hadoop.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/hadoop.svg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Hadoop</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="data-science.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/data-science.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Data Science</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="angular.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/angular.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Angular</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col ">
+                            <a href="block-chain.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/blockchain.png"
+                                        alt="Artificial intelegence Image" style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Blockchain</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="git.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/git.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Git</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="ml.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/ml.png" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">Machine Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="devops.html" style="text-decoration: none;">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/devops.jpg" alt="Card image cap"
+                                        style="height: 175px;">
+                                    <div class="card-body"><br>
+                                        <p class="card-text">DevOps</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- ************************************This is Right Div ***************************************** -->
+                    <div>
+                        <div class="aside list">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="java-interview.html#javabasicquestions">Java Basic Interview Questions</a>
+                                </li>
+                                <li><a href="java-interview-2.html#javainheritancequestions">Java Inheritance
+                                        Questions</a></li>
+                                <li><a href="java-interview.html#javaoppsquestions">Java OOP's Interview Questions</a>
+                                </li>
+                                <li><a href="#">Java Multithreading Questions</a></li>
+                                <li><a href="java-interview.html#javastaticquestions">Java String & Exception
+                                        Questions</a></li>
+                                <li><a href="#">Java Collection Interview Questions</a></li>
+                                <li><a href="#">JDBC Interview Questions</a></li>
+                                <li><a href="#">Servlet Interview Questions</a></li>
+                                <li><a href="#">JSP Interview Questions</a></li>
+                                <li><a href="#">Spring Interview Questions</a></li>
+                                <li><a href="#">Hibernate Interview Questions</a></li>
+                                <li><a href="#">PL/SQL Interview Questions</a></li>
+                                <li><a href="#">SQL Interview Questions</a></li>
+                                <li><a href="#">Oracle Interview Questions</a></li>
+                                <li><a href="#">Andriod Interview Questions</a></li>
+                                <li><a href="#">SQL Server Interview Questions</a></li>
+                                <li><a href="#">MySQL Interview Questions</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!-- Footer -->
+        <div class="continer border-top">
+            <div class="row bg-white">
+                <div class="col">
+                    <div class="navbar-brand mb-0 h1">
+                        <img src="../img/iG.png" alt="">
+                    </div>
+                    <div>
+                        <span><img class="footer-icon" src="../img/mail_icon.svg" alt=""></span>
+                        <span class="footer-text"><a href="mailto:contact@interviewofgeeks.com"
+                                style="text-decoration: none; color: #308D46;">conact@interviewofgeeks.com</a></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Company</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="../contact-us.html">Contact Us</a></li>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../copyright-policy.html">Copyright Policy</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Learn</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="algorithm.html">Algorithms</a></li>
+                            <li><a href="data-structure.html">Data Structure</a></li>
+                            <li><a href="../tutorials/tutorials.html">Languages</a></li>
+                            <li><a href="java-interview.html">Java Interview</a></li>
+                            <li><a href="python-interview.html">Python Interview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-text">Contribute</div>
+                    <div class="footer-link">
+                        <ul>
+                            <li><a href="../article.html">Write an Article</a></li>
+                            <li><a href="../your-experience.html">Write Interview Experience</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #308D46;"><span
+                style="margin: 15px 0 15px 25px; font-size: large; font-weight: bolder;color: white;">@InterviewofGeeks,
+                Some
+                rights reserved.</span> </div>
+
+        <!-- up Arrow -->
+        <a href="#top" class="up-arrow">
+            <img src="../img/up-arrow.svg" />
+        </a>
+
+        <!-- Primary Div Ends -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // executes when HTML-Document is loaded and DOM is ready
+            console.log("document is ready");
+
+
+            $(".card").hover(
+                function () {
+                    $(this).addClass('shadow-lg').css('cursor', 'pointer');
+                }, function () {
+                    $(this).removeClass('shadow-lg');
+                }
+            );
+
+            // document ready  
+        });
+    </script>
+    <script>
+        var date = new Date(2021, 2, 1);
+        document.getElementById("date").innerHTML = date;
+    </script>
+    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
+
+</body>
+
+</html>
